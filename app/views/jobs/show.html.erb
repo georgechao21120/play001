@@ -1,0 +1,66 @@
+<h1> <%= @job.title %> </h1>
+
+<div class="text-center">
+  <%= link_to("分享病例", new_job_resume_path(@job), :style => "font-size: 30px; text-decoration:underline;") %>
+</div>
+
+<ul>
+  <li> <h4><font color="03A9F4">模板</font></h4></li>
+    <%= simple_format(@job.description) %>
+  <li> <h4><font color="03A9F4">症状</font></h4></li>
+  <%= simple_format(@job.symp) %>
+  <li> <h4><font color="03A9F4">体征</font></h4></li>
+  <%= simple_format(@job.sign) %>
+  <li> <h4><font color="03A9F4">生化</font></h4></li>
+  <%= simple_format(@job.bio) %>
+  <li> <h4><font color="03A9F4">病理</font></h4></li>
+  <%= simple_format(@job.path) %>
+  <li> <h4><font color="03A9F4">治疗</font></h4></li>
+  <%= simple_format(@job.treat) %>
+  <li> <h4><font color="03A9F4">位置</font></h4></li>
+    <%= simple_format(@job.pos) %>
+  <li> <h4><font color="03A9F4">切面</font></h4></li>
+  <%= simple_format(@job.aut) %>
+  <li> <h4><font color="03A9F4">大小</font></h4></li>
+  <%= simple_format(@job.size) %>
+  <li> <h4><font color="03A9F4">回声</font></h4></li>
+  <%= simple_format(@job.echo) %>
+  <li> <h4><font color="03A9F4">成分</font></h4></li>
+  <%= simple_format(@job.comp) %>
+  <li> <h4><font color="03A9F4">形态</font></h4></li>
+  <%= simple_format(@job.form) %>
+  <li> <h4><font color="03A9F4">边缘</font></h4></li>
+  <%= simple_format(@job.edge) %>
+  <li> <h4><font color="03A9F4">钙化</font></h4></li>
+  <%= simple_format(@job.calc) %>
+  <li> <h4><font color="03A9F4">血流</font></h4></li>
+  <%= simple_format(@job.color) %>
+  <li> <h4><font color="03A9F4">频谱</font></h4></li>
+  <%= simple_format(@job.spec) %>
+  <li> <h4><font color="03A9F4">质地</font></h4></li>
+  <%= simple_format(@job.elas) %>
+  <li> <h4><font color="03A9F4">造影</font></h4></li>
+  <%= simple_format(@job.spare) %>
+  <li> <h4><font color="03A9F4">整理者&参考来源</font></h4></li>
+  <%= simple_format(@job.contact_email) %>
+</ul>
+
+<div class="row">
+  <div class="col-md-6">
+    <% if @job.image.present? %>
+      <%= image_tag(@job.image.medium.url, class: "thumbnail") %>
+    <% else %>
+      <%= image_tag("http://placehold.it/400x400&text=No Pic", class: "thumbnail") %>
+    <% end %>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-6">
+  <% if @job.images.present? %>
+    <% @job.images.each do |i| %>
+      <%= link_to image_tag(i.url(:small)), i.url, class: "thumbnail"%>
+   <% end %>
+  <% end %>
+</div>
+</div>

@@ -1,0 +1,53 @@
+<h1> 添加病谱 </h1>
+
+<%= simple_form_for @job do |f| %>
+<%= f.input :title, :label => "名称" %>
+<%= f.input :description, :label => "模板" %>
+<%= f.input :wage_lower_bound, :label => "正常值" %>
+<%= f.input :pos, :label => "部位" %>
+<%= f.input :aut, :label => "切面" %>
+<%= f.input :size, :label => "大小" %>
+<%= f.input :echo, :label => "回声" %>
+<%= f.input :comp, :label => "成分" %>
+<%= f.input :form, :label => "形态" %>
+<%= f.input :edge, :label => "边缘" %>
+<%= f.input :calc, :label => "钙化" %>
+<%= f.input :color, :label => "血流" %>
+<%= f.input :spec, :label => "频谱" %>
+<%= f.input :elas, :label => "弹性（质地）" %>
+<%= f.input :symp, :label => "症状" %>
+<%= f.input :sign, :label => "体征" %>
+<%= f.input :bio, :label => "生化" %>
+<%= f.input :path, :label => "病理" %>
+<%= f.input :treat, :label => "治疗" %>
+<%= f.input :spare, :label => "造影" %>
+<%= f.input :contact_email, :label => "整理者&联系方式" %>
+<%= f.input :wage_upper_bound, :label => "参考文献" %>
+<%= f.input :is_hidden, :label => "待审核" %>
+
+<form class="form-inline">
+   <% if @job.image.present? %>
+     <span>病例图片</span> <br>
+     <%= image_tag(@job.image.thumb.url) %>
+   <% end %>
+
+   <div class="group">
+     <%= f.input :image, as: :file, :label => "单图" %>
+   </div>
+
+     <div class="form-group">
+       <%= f.label :images, :label => "多图" %>
+       <%= f.file_field :images, :multiple => true, :class => "form-control" %>
+       <% if f.object.images.present? %>
+         <label>
+           <%= f.check_box :remove_images %> 删除图档
+         </label>
+         <% f.object.images.each do |i| %>
+           <%= link_to i.filename, i.url, :target => "_blank" %>
+         <% end %>
+       <% end %>
+     </div>
+
+  <%= f.submit "上传" %>
+<% end %>
+</form>

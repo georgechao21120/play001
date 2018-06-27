@@ -1,0 +1,43 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  description: MyText
+  pos: MyText
+  size: MyText
+  echo: MyText
+  comp: MyText
+  form: MyText
+  edge: MyText
+  calc: MyText
+  color: MyText
+  spec: MyText
+  elas: MyText
+  spare: MyText
+  symp: MyText
+  sign: MyText
+  bio: MyText
+  path: MyText
+  treat: MyText
+  aut: MyText
+
+two:
+  title: MyString
+  description: MyText
+  pos: MyText
+  size: MyText
+  echo: MyText
+  comp: MyText
+  form: MyText
+  edge: MyText
+  calc: MyText
+  color: MyText
+  spec: MyText
+  elas: MyText
+  spare: MyText
+  symp: MyText
+  sign: MyText
+  bio: MyText
+  path: MyText
+  treat: MyText
+  aut: MyText

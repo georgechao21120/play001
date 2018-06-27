@@ -1,0 +1,87 @@
+<br><br>
+<form class="form-inline">
+<p>
+  <button id="my-open-click" type="button" class="btn btn-default">诊断</button>
+  <%= link_to("还原", jobs_path, :class => "btn btn-default" ) %>
+  <%= link_to("新增", new_job_path, :class => "btn btn-default" ) %>
+  <%= search_form_for @q do |f| %>
+  <%= f.search_field :title_cont, :placeholder => "输入名称", :class => "form-control" %>
+  <%= f.submit "search", :class => "btn btn-default" %></p>
+  <% end %>
+  </div>
+</p>
+</form>
+
+
+<div id="foo" ;">
+  <button id="my-hide-click" type="button" class="btn btn-warning">隐藏</button>
+  <%= search_form_for @q do |f| %>
+
+      <p><%= f.search_field :pos_cont, :placeholder => "位置", :class => "form-control" %></p>
+      <p><%= f.search_field :aut_cont, :placeholder => "切面", :class => "form-control" %></p>
+      <p><%= f.search_field :comp_cont, :placeholder => "成分", :class => "form-control" %></p>
+      <p><%= f.search_field :form_cont, :placeholder => "形态", :class => "form-control" %></p>
+      <p><%= f.search_field :edge_cont, :placeholder => "边缘", :class => "form-control" %></p>
+      <p><%= f.search_field :calc_cont, :placeholder => "钙化", :class => "form-control" %></p>
+      <p><%= f.search_field :color_cont, :placeholder => "血流", :class => "form-control" %></p>
+      <p><%= f.search_field :spec_cont, :placeholder => "频谱", :class => "form-control" %></p>
+      <p><%= f.search_field :elas_cont, :placeholder => "弹性（质地）", :class => "form-control" %></p>
+      <p><%= f.search_field :spare_cont, :placeholder => "造影", :class => "form-control" %></p>
+      <p><%= f.search_field :symp_cont, :placeholder => "症状", :class => "form-control" %></p>
+      <p><%= f.search_field :sign_cont, :placeholder => "体征", :class => "form-control" %></p>
+      <p><%= f.search_field :bio_cont, :placeholder => "生化", :class => "form-control" %></p>
+      <p><%= f.search_field :path_cont, :placeholder => "病理", :class => "form-control" %></p>
+      <p><%= f.search_field :treat_cont, :placeholder => "治疗", :class => "form-control" %></p>
+
+      <p class="text-right">
+           <%= submit_tag "思考", :class => "btn btn-primary" %>
+           <% end %>
+      </p>
+
+
+</div>
+
+<script>
+  $("#foo").slideUp();
+
+  $("#my-open-click").click(function(){
+    $("#foo").slideDown();
+  })
+
+  $("#my-hide-click").click(function(){
+    $("#foo").slideUp();
+  })
+</script>
+<br><br>
+<br><br>
+
+<table class="table table-hover">
+    <thead>
+        <tr class="bg-info">
+            <td>名称</td>
+            <td>模板</td>
+            <td>正常值</td>
+        </tr class="bg-info">
+    </thead>
+
+    <tbody>
+        <% @jobs.each do |job| %>
+        <tr>
+            <td>
+                <%= link_to(job.title, job_path(job)) %>
+            </td>
+            <td>
+                <%= job.description %>
+            </td>
+            <td>
+                <%= job.wage_lower_bound %>
+            </td>
+        </tr>
+        <% end %>
+    </tbody>
+</table>
+
+
+<div class="text-center">
+      <%= will_paginate @jobs %>
+</div>
