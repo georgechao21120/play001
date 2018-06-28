@@ -37,6 +37,8 @@ gem 'jbuilder', '~> 2.5'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
+  gem 'capistrano-rails'
+  gem 'capistrano-passenger'
   gem 'byebug', platform: :mri
 end
 
@@ -56,10 +58,6 @@ gem 'mysql2'
 
 
 group :development do
-  gem 'brakeman'
-  gem 'bundler-audit'
-  gem 'capistrano-rails'
-  gem 'capistrano-passenger'
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
   gem 'web-console', '>= 3.3.0'
   gem 'listen', '~> 3.0.5'

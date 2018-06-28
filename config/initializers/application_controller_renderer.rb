@@ -6,4 +6,3 @@
 #     https: false
 #   )
 # end
-config.middleware.use Rack::Attack
