@@ -55,7 +55,9 @@ gem 'qiniu-rs'
 gem 'figaro'
 gem 'will_paginate'
 gem 'rack-attack'
-
+gem 'rubyzip'
+gem 'axlsx'
+gem 'axlsx_rails'
 
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.

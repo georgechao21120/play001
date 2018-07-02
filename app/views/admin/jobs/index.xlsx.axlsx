@@ -1,0 +1,7 @@
+wb = xlsx_package.workbook
+wb.add_worksheet(name: "Buttons") do |sheet|
+  sheet.add_row ["名称", "模板", "正常值", "位置", "大小", "回声", "切面", "成分", "形态", "边缘", "钙化", "血流", "频谱", "弹性（质地）", "造影", "症状", "体征", "生化", "病理", "治疗", "造影", "整理者&联系方式", "参考文献"]
+  @jobs.each do |r|
+    sheet.add_row [r.title, r.description, r.wage_lower_bound, r.pos, r.size, r.echo, r.aut, r.comp, r.form, r.edge, r.calc, r.color, r.spec, r.elas, r.symp, r.sign, r.bio, r.path, r.treat, r.spare, r.contact_email, r.wage_upper_bound]
+  end
+end
