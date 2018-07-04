@@ -1,10 +1,15 @@
 <br></br>
-<div class="form-group form-inline search-bar text-center">
+<div class="pull-left">
+  <%= link_to("新增", new_job_path, :class => "btn btn-default" ) %>
+</div>
+<div class="row text-center">
+<div class="form-group form-inline search-bar text-center col-xs-12 col-md-8">
   <%= search_form_for @q do |f| %>
   <button id="my-open-click" type="button" class="btn btn-default">诊断</button>
   <%= f.search_field :title_cont, :placeholder => "输入名称 搜索模板", :class => "form-control" %>
   <%= f.submit "search", :class => "btn btn-default" %></p>
   <% end %>
+</div>
 </div>
 
 <div id="foo" ;">
@@ -69,7 +74,7 @@
                 <%= job.description %>
             </td>
             <td>
-                <%= job.wage_lower_bound %>
+                <%= job.num %>
             </td>
         </tr>
         <% end %>

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180627110534) do
+ActiveRecord::Schema.define(version: 20180704131139) do
 
   create_table "cart_items", force: :cascade do |t|
     t.integer  "cart_id"
@@ -76,6 +76,14 @@ ActiveRecord::Schema.define(version: 20180627110534) do
     t.boolean  "is_hidden",        default: true
     t.string   "image"
     t.string   "images"
+    t.string   "friendly_id"
+    t.text     "num"
+    t.text     "paper"
+    t.text     "person"
+    t.text     "hct"
+    t.text     "apple"
+    t.text     "ori"
+    t.index ["friendly_id"], name: "index_jobs_on_friendly_id", unique: true
   end
 
   create_table "resumes", force: :cascade do |t|

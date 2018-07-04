@@ -10,7 +10,15 @@
 
     <body>
 
-        <div class="container-fluid">
+        <div class="container-fluid style="padding-top: 60px">
+        <% if notice %>
+            <p class="notice alert-success"><%= notice %></p>
+        <% end %>
+
+        <% if alert %>
+            <p class="alert alert-danger"><%= alert %></p>
+        <% end %>
+        
             <%= render "common/navbar" %>
             <%= render "common/flashes" %>
             <div class="row">
