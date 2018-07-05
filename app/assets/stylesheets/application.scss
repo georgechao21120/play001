@@ -280,3 +280,17 @@
     .login-help{
       font-size: 12px;
     }
+
+    table{
+
+    　　table-layout: fixed;
+
+    }
+
+    td{
+
+    　　white-space: nowrap;
+    　　overflow: hidden;
+    　　text-overflow: ellipsis;
+
+    }

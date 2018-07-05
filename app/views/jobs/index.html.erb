@@ -1,20 +1,13 @@
 <meta name="viewport" content="width=320px, user-scalable=no, initial-scale=1, maximum-scale=1">
 
-<div class="pull-left row ">
+
+<div class="pull-left ">
   <%= link_to("新增", new_job_path, :class => "btn btn-default" ) %>
 </div>
-<div class="row text-left">
-<div class="form-group form-inline search-bar text-center col-xs-12 col-md-8">
-  <%= search_form_for @q do |f| %>
-  <button id="my-open-click" type="button" class="btn btn-default">诊断</button>
-  <%= f.search_field :title_cont, :placeholder => "输入名称 搜索模板", :class => "form-control" %>
-  <%= f.submit "search", :class => "btn btn-default" %></p>
-  <% end %>
-</div>
-</div>
 
+<button id="my-open-click" type="button" class="btn btn-default">诊断</button>
 <div id="foo" ;">
-  <button id="my-hide-click" type="button" class="btn btn-warning">隐藏</button>
+  <button id="my-hide-click" type="button" class="btn btn-default">隐藏</button>
   <%= search_form_for @q do |f| %>
       <p><%= f.search_field :pos_cont, :placeholder => "位置", :class => "form-control" %></p>
       <p><%= f.search_field :aut_cont, :placeholder => "切面", :class => "form-control" %></p>
@@ -35,10 +28,11 @@
       <p><%= f.search_field :treat_cont, :placeholder => "治疗", :class => "form-control" %></p>
 
       <p class="text-left">
-           <%= submit_tag "思考", :class => "btn btn-primary" %>
+           <%= submit_tag "思考", :class => "btn btn-info" %>
            <% end %>
       </p>
 </div>
+
 
 <script>
   $("#foo").hide();
@@ -52,6 +46,31 @@
   })
 </script>
 
+<button id="coo" type="button" class="btn btn-default">模板</button>
+
+<div id="try" ;">
+  <button id="bye" type="button" class="btn btn-default">隐藏</button>
+<%= search_form_for @q do |f| %>
+<%= f.search_field :title_cont, :placeholder => "名称", :class => "form-control" %>
+<%= f.search_field :num_cont, :placeholder => "正常值", :class => "form-control" %>
+<p class="text-left">
+<%= f.submit "查询", :class => "btn btn-info" %>
+<% end %>  </p>
+
+</div>
+
+<script>
+  $("#try").hide();
+
+  $("#coo").click(function(){
+    $("#try").show();
+  })
+
+  $("#bye").click(function(){
+    $("#try").hide();
+  })
+</script>
+
 <br></br>
 
 <div class="table-responsive">
@@ -59,8 +78,9 @@
 
     <thead>
         <tr class="bg-info">
-            <td width="40">名称</td>
-            <td>正常值</td>
+            <td width="60">名称</td>
+            <td width="90">正常值</td>
+            <td>模板</td>
         </tr class="bg-info">
     </thead>
 
@@ -72,6 +92,9 @@
             </td>
             <td>
                 <%= job.num %>
+            </td>
+            <td>
+                <%= job.description %>
             </td>
         </tr>
         <% end %>
