@@ -54,11 +54,13 @@
 <%= search_form_for @q do |f| %>
 <%= f.search_field :title_cont, :placeholder => "名称", :class => "form-control" %>
 <%= f.search_field :num_cont, :placeholder => "正常值", :class => "form-control" %>
+
 <p class="text-left">
 <%= f.submit "查询", :class => "btn btn-info" %>
 <% end %>  </p>
 
 </div>
+
 
 <script>
   $("#try").hide();
@@ -72,7 +74,6 @@
   })
 </script>
 
-<br></br>
 
 <div class="table-responsive">
 <table class="table table-hover">
@@ -88,20 +89,19 @@
     <tbody>
         <% @jobs.each do |job| %>
         <tr>
-            <td>
+            <td height:100>
                 <%= link_to(job.title, job_path(job)) %>
             </td>
-            <td>
+            <td height:100>
                 <%= job.num %>
             </td>
-            <td>
+            <td height:100>
                 <%= job.description %>
             </td>
         </tr>
         <% end %>
     </tbody>
 </table>
-
 
 <div class="text-center">
       <%= will_paginate @jobs %>

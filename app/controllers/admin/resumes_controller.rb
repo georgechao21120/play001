@@ -5,8 +5,8 @@ class Admin::ResumesController < ApplicationController
   layout 'admin'
 
   def index
-    @job = Job.find(params[:job_id])
+    @job = Job.find_by_friendly_id!(params[:job_id])
     @resumes = @job.resumes.order('created_at DESC')
   end
-  
+
 end

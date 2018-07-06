@@ -58,6 +58,9 @@ gem 'rack-attack'
 gem 'rubyzip'
 gem 'axlsx'
 gem 'axlsx_rails'
+gem 'utf8-cleaner'
+gem 'roo'
+gem "iconv", "~> 1.0.3"
 
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.

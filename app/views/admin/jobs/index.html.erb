@@ -2,6 +2,8 @@
   <%= link_to("新增病例", new_admin_job_path, :class => "btn btn-default" ) %>
 </div>
 
+
+
 <br><br>
 
 <table class="table table-boldered table-striped custab" >
@@ -50,12 +52,17 @@
 </table>
 
 <p>
+    <%= link_to "汇出 CSV", admin_jobs_path(:format => :csv), :class => "btn btn-default" %>
+</p>
+
+<p>
   <%= link_to "汇出 Excel", admin_jobs_path(:format => :xlsx), :class => "btn btn-default" %>
 </p>
 
  <hr>
 
- <%= form_tag import_admin_jobs_path(@job), :multipart => true do %>
-   <p><%= file_field_tag "csv_file" %></p>
-   <p><%= submit_tag "汇入CSV", :class => "btn btn-danger" %></p>
+ <h2>Import D</h2>
+ <%= form_tag import_admin_jobs_path, multipart: true do %>
+   <%= file_field_tag :file %>
+   <%= submit_tag "Import" %>
  <% end %>
