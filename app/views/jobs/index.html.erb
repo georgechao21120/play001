@@ -55,12 +55,16 @@
 <%= f.search_field :title_cont, :placeholder => "名称", :class => "form-control" %>
 <%= f.search_field :num_cont, :placeholder => "正常值", :class => "form-control" %>
 
+<ul class="list-unstyled">
+<li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝囊肿&q%5Bnum_cont%5D=&commit=查询">肝囊肿</a></li>
+<li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝多发囊肿&q%5Bnum_cont%5D=&commit=查询">肝多发囊肿</a></li>
+</ul>
+
 <p class="text-left">
 <%= f.submit "查询", :class => "btn btn-info" %>
 <% end %>  </p>
 
 </div>
-
 
 <script>
   $("#try").hide();
