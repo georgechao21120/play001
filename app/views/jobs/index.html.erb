@@ -1,8 +1,7 @@
 <meta name="viewport" content="width=320px, user-scalable=no, initial-scale=1, maximum-scale=1">
 
-
-
-<button id="my-open-click" type="button" class="btn border：0">诊断</button>
+<ul class="list-inline">
+<li id="my-open-click" type="button" class="btn border：0">诊断</li>
 
 <div id="foo" ;">
   <button id="my-hide-click" type="button" class="btn btn-default">隐藏</button>
@@ -46,18 +45,13 @@
 
 
 
-<button id="coo" type="button" class="btn border：0">模板</button>
+<li id="coo" type="button" class="btn border：0">模板</li>
 
 <div id="try" ;">
   <button id="bye" type="button" class="btn btn-default">隐藏</button>
 <%= search_form_for @q do |f| %>
 <%= f.search_field :title_cont, :placeholder => "名称", :class => "form-control" %>
 <%= f.search_field :num_cont, :placeholder => "正常值", :class => "form-control" %>
-
-<ul class="list-unstyled">
-<li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝囊肿&q%5Bnum_cont%5D=&commit=查询">肝囊肿</a></li>
-<li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝多发囊肿&q%5Bnum_cont%5D=&commit=查询">肝多发囊肿</a></li>
-</ul>
 
 <p class="text-left">
 <%= f.submit "查询", :class => "btn btn-info" %>
@@ -76,6 +70,2147 @@
     $("#try").hide();
   })
 </script>
+
+<li id="testa"type="button" class="btn border：0">腹部</li>
+
+<div id="testc" ;">
+<a id="testb">B</a>
+
+  <button id="testaa" type="button" class="btn border：0">肝脏</button>
+
+  <div id="testcc" ;">
+  <ul class="list-unstyled">
+  <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝囊肿&q%5Bnum_cont%5D=&commit=查询">肝囊肿</a></li>
+  <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝多发囊肿&q%5Bnum_cont%5D=&commit=查询">肝多发囊肿</a></li>
+  <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=慢性血吸虫性肝病&q%5Bnum_cont%5D=&commit=查询">慢性血吸虫性肝病</a></li>
+  <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=血吸虫性肝硬化&q%5Bnum_cont%5D=&commit=查询">血吸虫性肝硬化</a></li>
+  <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=脂肪肝&q%5Bnum_cont%5D=&commit=查询">脂肪肝</a></li>
+  <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=脂肪肝倾向&q%5Bnum_cont%5D=&commit=查询">脂肪肝倾向</a></li>
+  <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝内钙化灶&q%5Bnum_cont%5D=&commit=查询">肝内钙化灶</a></li>
+  <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=血管瘤&q%5Bnum_cont%5D=&commit=查询">肝血管瘤</a></li>
+  <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝占位&q%5Bnum_cont%5D=&commit=查询">肝占位</a></li>
+  <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝内胆管胆固醇结晶&q%5Bnum_cont%5D=&commit=查询">肝内胆管胆固醇结晶</a></li>
+  <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=慢性肝病&q%5Bnum_cont%5D=&commit=查询">慢性肝病</a></li>
+  <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝门静脉高压&q%5Bnum_cont%5D=&commit=查询">肝门静脉高压</a></li>
+  </ul>
+  <script>
+    $("#testcc").hide();
+
+    $("#testaa").click(function(){
+      $("#testcc").show();
+    })
+
+    $("#testbb").click(function(){
+      $("#testcc").hide();
+    })
+  </script>
+  </div>
+
+  <div id="testc" ;">
+
+    <button id="testa01" type="button" class="btn border：0">胆囊</button>
+
+    <div id="testc01" ;">
+    <ul class="list-unstyled">
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=胆囊结石&q%5Bnum_cont%5D=&commit=查询">胆囊炎、胆囊结石</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=胆囊多发结石&q%5Bnum_cont%5D=&commit=查询">胆囊炎、胆囊多发结石</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=颈部嵌顿&q%5Bnum_cont%5D=&commit=查询">胆囊炎、胆囊结石（颈部嵌顿）</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=胆囊息肉&q%5Bnum_cont%5D=&commit=查询">胆囊息肉</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=胆囊多发息肉&q%5Bnum_cont%5D=&commit=查询">胆囊多发息肉</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=胆囊壁胆固醇结晶&q%5Bnum_cont%5D=&commit=查询">胆囊壁胆固醇结晶</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=急性胆囊炎&q%5Bnum_cont%5D=&commit=查询">急性胆囊炎</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=胆囊腺肌症&q%5Bnum_cont%5D=&commit=查询">胆囊腺肌症</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=胆总管扩张&q%5Bnum_cont%5D=&commit=查询">胆总管扩张伴结石</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=胆囊占位&q%5Bnum_cont%5D=&commit=查询">胆囊占位</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=荷包蛋实验&q%5Bnum_cont%5D=&commit=查询">荷包蛋实验</a></li>
+    </ul>
+    <script>
+      $("#testc01").hide();
+
+      $("#testa01").click(function(){
+        $("#testc01").show();
+      })
+
+      $("#testb01").click(function(){
+        $("#testc01").hide();
+      })
+    </script>
+    </div>
+
+    <div id="testc" ;">
+
+      <button id="testa02" type="button" class="btn border：0">胰腺</button>
+
+      <div id="testc02" ;">
+      <ul class="list-unstyled">
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=急性胰腺炎&q%5Bnum_cont%5D=&commit=查询">急性胰腺炎</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=慢性胰腺炎&q%5Bnum_cont%5D=&commit=查询">慢性胰腺炎</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=胰腺占位&q%5Bnum_cont%5D=&commit=查询">胰腺占位</a></li>
+      </ul>
+      <script>
+        $("#testc02").hide();
+
+        $("#testa02").click(function(){
+          $("#testc02").show();
+        })
+
+        $("#testb02").click(function(){
+          $("#testc02").hide();
+        })
+      </script>
+      </div>
+
+    <div id="testc" ;">
+
+      <button id="testa03" type="button" class="btn border：0">脾脏</button>
+
+      <div id="testc03" ;">
+      <ul class="list-unstyled">
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=脾肿大&q%5Bnum_cont%5D=&commit=查询">脾肿大</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=脾破裂&q%5Bnum_cont%5D=&commit=查询">脾破裂</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=脾内血肿&q%5Bnum_cont%5D=&commit=查询">脾内血肿</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=血吸虫性肝硬化&q%5Bnum_cont%5D=&commit=查询">血吸虫性肝硬化</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=副脾&q%5Bnum_cont%5D=&commit=查询">副脾</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=脾占位&q%5Bnum_cont%5D=&commit=查询">脾占位</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=血管瘤&q%5Bnum_cont%5D=&commit=查询">脾血管瘤</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=脾静脉&q%5Bnum_cont%5D=&commit=查询">脾静脉</a></li>
+      </ul>
+      <script>
+        $("#testc03").hide();
+
+        $("#testa03").click(function(){
+          $("#testc03").show();
+        })
+
+        $("#testb03").click(function(){
+          $("#testc03").hide();
+        })
+      </script>
+      </div>
+</div>
+
+<div id="testc" ;">
+    <button id="testa05" type="button" class="btn border：0">肾脏</button>
+
+    <div id="testc05" ;">
+    <ul class="list-unstyled">
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝囊肿&q%5Bnum_cont%5D=&commit=查询">肝囊肿</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝多发囊肿&q%5Bnum_cont%5D=&commit=查询">肝多发囊肿</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=慢性血吸虫性肝病&q%5Bnum_cont%5D=&commit=查询">慢性血吸虫性肝病</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=血吸虫性肝硬化&q%5Bnum_cont%5D=&commit=查询">血吸虫性肝硬化</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=脂肪肝&q%5Bnum_cont%5D=&commit=查询">脂肪肝</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=脂肪肝倾向&q%5Bnum_cont%5D=&commit=查询">脂肪肝倾向</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝内钙化灶&q%5Bnum_cont%5D=&commit=查询">肝内钙化灶</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=血管瘤&q%5Bnum_cont%5D=&commit=查询">肝血管瘤</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝占位&q%5Bnum_cont%5D=&commit=查询">肝占位</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝内胆管胆固醇结晶&q%5Bnum_cont%5D=&commit=查询">肝内胆管胆固醇结晶</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=慢性肝病&q%5Bnum_cont%5D=&commit=查询">慢性肝病</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝门静脉高压&q%5Bnum_cont%5D=&commit=查询">肝门静脉高压</a></li>
+    </ul>
+    <script>
+      $("#testc05").hide();
+
+      $("#testa05").click(function(){
+        $("#testc05").show();
+      })
+
+      $("#testb05").click(function(){
+        $("#testc05").hide();
+      })
+    </script>
+    </div>
+</div>
+
+    <button id="testa04" type="button" class="btn border：0">腹腔</button>
+
+    <div id="testc04" ;">
+    <ul class="list-unstyled">
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝囊肿&q%5Bnum_cont%5D=&commit=查询">肝囊肿</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝多发囊肿&q%5Bnum_cont%5D=&commit=查询">肝多发囊肿</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=慢性血吸虫性肝病&q%5Bnum_cont%5D=&commit=查询">慢性血吸虫性肝病</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=血吸虫性肝硬化&q%5Bnum_cont%5D=&commit=查询">血吸虫性肝硬化</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=脂肪肝&q%5Bnum_cont%5D=&commit=查询">脂肪肝</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=脂肪肝倾向&q%5Bnum_cont%5D=&commit=查询">脂肪肝倾向</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝内钙化灶&q%5Bnum_cont%5D=&commit=查询">肝内钙化灶</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=血管瘤&q%5Bnum_cont%5D=&commit=查询">肝血管瘤</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝占位&q%5Bnum_cont%5D=&commit=查询">肝占位</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝内胆管胆固醇结晶&q%5Bnum_cont%5D=&commit=查询">肝内胆管胆固醇结晶</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=慢性肝病&q%5Bnum_cont%5D=&commit=查询">慢性肝病</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝门静脉高压&q%5Bnum_cont%5D=&commit=查询">肝门静脉高压</a></li>
+    </ul>
+    <script>
+      $("#testc04").hide();
+
+      $("#testa04").click(function(){
+        $("#testc04").show();
+      })
+
+      $("#testb04").click(function(){
+        $("#testc04").hide();
+      })
+    </script>
+    </div>
+  </div>
+
+
+<script>
+  $("#testc").hide();
+
+  $("#testa").click(function(){
+    $("#testc").show();
+  })
+
+  $("#testb").click(function(){
+    $("#testc").hide();
+  })
+</script>
+</div>
+</div>
+
+<li id="testa11"type="button" class="btn border：0">泌尿</li>
+
+<div id="testc11" ;">
+<a id="testb11">B</a>
+
+  <button id="testa06" type="button" class="btn border：0">肾脏</button>
+
+  <div id="testc06" ;">
+  <ul class="list-inline">
+  <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝囊肿&q%5Bnum_cont%5D=&commit=查询">肝囊肿</a></li>
+  <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝多发囊肿&q%5Bnum_cont%5D=&commit=查询">肝多发囊肿</a></li>
+  <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=慢性血吸虫性肝病&q%5Bnum_cont%5D=&commit=查询">慢性血吸虫性肝病</a></li>
+  <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=血吸虫性肝硬化&q%5Bnum_cont%5D=&commit=查询">血吸虫性肝硬化</a></li>
+  <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=脂肪肝&q%5Bnum_cont%5D=&commit=查询">脂肪肝</a></li>
+  <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=脂肪肝倾向&q%5Bnum_cont%5D=&commit=查询">脂肪肝倾向</a></li>
+  <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝内钙化灶&q%5Bnum_cont%5D=&commit=查询">肝内钙化灶</a></li>
+  <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=血管瘤&q%5Bnum_cont%5D=&commit=查询">肝血管瘤</a></li>
+  <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝占位&q%5Bnum_cont%5D=&commit=查询">肝占位</a></li>
+  <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝内胆管胆固醇结晶&q%5Bnum_cont%5D=&commit=查询">肝内胆管胆固醇结晶</a></li>
+  <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=慢性肝病&q%5Bnum_cont%5D=&commit=查询">慢性肝病</a></li>
+  <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝门静脉高压&q%5Bnum_cont%5D=&commit=查询">肝门静脉高压</a></li>
+  </ul>
+  <script>
+    $("#testc06").hide();
+
+    $("#testa06").click(function(){
+      $("#testc06").show();
+    })
+
+    $("#testb06").click(function(){
+      $("#testc06").hide();
+    })
+  </script>
+  </div>
+
+  <div id="testc11" ;">
+
+    <button id="testa07" type="button" class="btn border：0">输尿管</button>
+
+    <div id="testc07" ;">
+    <ul class="list-unstyled">
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝囊肿&q%5Bnum_cont%5D=&commit=查询">肝囊肿</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝多发囊肿&q%5Bnum_cont%5D=&commit=查询">肝多发囊肿</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=慢性血吸虫性肝病&q%5Bnum_cont%5D=&commit=查询">慢性血吸虫性肝病</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=血吸虫性肝硬化&q%5Bnum_cont%5D=&commit=查询">血吸虫性肝硬化</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=脂肪肝&q%5Bnum_cont%5D=&commit=查询">脂肪肝</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=脂肪肝倾向&q%5Bnum_cont%5D=&commit=查询">脂肪肝倾向</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝内钙化灶&q%5Bnum_cont%5D=&commit=查询">肝内钙化灶</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=血管瘤&q%5Bnum_cont%5D=&commit=查询">肝血管瘤</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝占位&q%5Bnum_cont%5D=&commit=查询">肝占位</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝内胆管胆固醇结晶&q%5Bnum_cont%5D=&commit=查询">肝内胆管胆固醇结晶</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=慢性肝病&q%5Bnum_cont%5D=&commit=查询">慢性肝病</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝门静脉高压&q%5Bnum_cont%5D=&commit=查询">肝门静脉高压</a></li>
+    </ul>
+    <script>
+      $("#testc07").hide();
+
+      $("#testa07").click(function(){
+        $("#testc07").show();
+      })
+
+      $("#testb07").click(function(){
+        $("#testc07").hide();
+      })
+    </script>
+    </div>
+
+    <div id="testc11" ;">
+
+      <button id="testa08" type="button" class="btn border：0">膀胱</button>
+
+      <div id="testc08" ;">
+      <ul class="list-unstyled">
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝囊肿&q%5Bnum_cont%5D=&commit=查询">肝囊肿</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝多发囊肿&q%5Bnum_cont%5D=&commit=查询">肝多发囊肿</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=慢性血吸虫性肝病&q%5Bnum_cont%5D=&commit=查询">慢性血吸虫性肝病</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=血吸虫性肝硬化&q%5Bnum_cont%5D=&commit=查询">血吸虫性肝硬化</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=脂肪肝&q%5Bnum_cont%5D=&commit=查询">脂肪肝</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=脂肪肝倾向&q%5Bnum_cont%5D=&commit=查询">脂肪肝倾向</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝内钙化灶&q%5Bnum_cont%5D=&commit=查询">肝内钙化灶</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=血管瘤&q%5Bnum_cont%5D=&commit=查询">肝血管瘤</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝占位&q%5Bnum_cont%5D=&commit=查询">肝占位</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝内胆管胆固醇结晶&q%5Bnum_cont%5D=&commit=查询">肝内胆管胆固醇结晶</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=慢性肝病&q%5Bnum_cont%5D=&commit=查询">慢性肝病</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝门静脉高压&q%5Bnum_cont%5D=&commit=查询">肝门静脉高压</a></li>
+      </ul>
+      <script>
+        $("#testc08").hide();
+
+        $("#testa08").click(function(){
+          $("#testc08").show();
+        })
+
+        $("#testb08").click(function(){
+          $("#testc08").hide();
+        })
+      </script>
+      </div>
+
+    <div id="testc11" ;">
+
+      <button id="testa09" type="button" class="btn border：0">前列腺</button>
+
+      <div id="testc09" ;">
+      <ul class="list-unstyled">
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝囊肿&q%5Bnum_cont%5D=&commit=查询">肝囊肿</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝多发囊肿&q%5Bnum_cont%5D=&commit=查询">肝多发囊肿</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=慢性血吸虫性肝病&q%5Bnum_cont%5D=&commit=查询">慢性血吸虫性肝病</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=血吸虫性肝硬化&q%5Bnum_cont%5D=&commit=查询">血吸虫性肝硬化</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=脂肪肝&q%5Bnum_cont%5D=&commit=查询">脂肪肝</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=脂肪肝倾向&q%5Bnum_cont%5D=&commit=查询">脂肪肝倾向</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝内钙化灶&q%5Bnum_cont%5D=&commit=查询">肝内钙化灶</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=血管瘤&q%5Bnum_cont%5D=&commit=查询">肝血管瘤</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝占位&q%5Bnum_cont%5D=&commit=查询">肝占位</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝内胆管胆固醇结晶&q%5Bnum_cont%5D=&commit=查询">肝内胆管胆固醇结晶</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=慢性肝病&q%5Bnum_cont%5D=&commit=查询">慢性肝病</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝门静脉高压&q%5Bnum_cont%5D=&commit=查询">肝门静脉高压</a></li>
+      </ul>
+      <script>
+        $("#testc09").hide();
+
+        $("#testa09").click(function(){
+          $("#testc09").show();
+        })
+
+        $("#testb09").click(function(){
+          $("#testc09").hide();
+        })
+      </script>
+      </div>
+</div>
+
+<div id="testc11" ;">
+    <button id="testa10" type="button" class="btn border：0">精囊腺</button>
+
+    <div id="testc10" ;">
+    <ul class="list-unstyled">
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝囊肿&q%5Bnum_cont%5D=&commit=查询">肝囊肿</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝多发囊肿&q%5Bnum_cont%5D=&commit=查询">肝多发囊肿</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=慢性血吸虫性肝病&q%5Bnum_cont%5D=&commit=查询">慢性血吸虫性肝病</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=血吸虫性肝硬化&q%5Bnum_cont%5D=&commit=查询">血吸虫性肝硬化</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=脂肪肝&q%5Bnum_cont%5D=&commit=查询">脂肪肝</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=脂肪肝倾向&q%5Bnum_cont%5D=&commit=查询">脂肪肝倾向</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝内钙化灶&q%5Bnum_cont%5D=&commit=查询">肝内钙化灶</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=血管瘤&q%5Bnum_cont%5D=&commit=查询">肝血管瘤</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝占位&q%5Bnum_cont%5D=&commit=查询">肝占位</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝内胆管胆固醇结晶&q%5Bnum_cont%5D=&commit=查询">肝内胆管胆固醇结晶</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=慢性肝病&q%5Bnum_cont%5D=&commit=查询">慢性肝病</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝门静脉高压&q%5Bnum_cont%5D=&commit=查询">肝门静脉高压</a></li>
+    </ul>
+    <script>
+      $("#testc10").hide();
+
+      $("#testa10").click(function(){
+        $("#testc10").show();
+      })
+
+      $("#testb10").click(function(){
+        $("#testc10").hide();
+      })
+    </script>
+    </div>
+</div>
+<div id="testc11" ;">
+    <button id="testa12" type="button" class="btn border：0">肾上腺</button>
+
+    <div id="testc12" ;">
+    <ul class="list-unstyled">
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝囊肿&q%5Bnum_cont%5D=&commit=查询">肝囊肿</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝多发囊肿&q%5Bnum_cont%5D=&commit=查询">肝多发囊肿</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=慢性血吸虫性肝病&q%5Bnum_cont%5D=&commit=查询">慢性血吸虫性肝病</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=血吸虫性肝硬化&q%5Bnum_cont%5D=&commit=查询">血吸虫性肝硬化</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=脂肪肝&q%5Bnum_cont%5D=&commit=查询">脂肪肝</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=脂肪肝倾向&q%5Bnum_cont%5D=&commit=查询">脂肪肝倾向</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝内钙化灶&q%5Bnum_cont%5D=&commit=查询">肝内钙化灶</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=血管瘤&q%5Bnum_cont%5D=&commit=查询">肝血管瘤</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝占位&q%5Bnum_cont%5D=&commit=查询">肝占位</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝内胆管胆固醇结晶&q%5Bnum_cont%5D=&commit=查询">肝内胆管胆固醇结晶</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=慢性肝病&q%5Bnum_cont%5D=&commit=查询">慢性肝病</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝门静脉高压&q%5Bnum_cont%5D=&commit=查询">肝门静脉高压</a></li>
+    </ul>
+    <script>
+      $("#testc12").hide();
+
+      $("#testa12").click(function(){
+        $("#testc12").show();
+      })
+
+      $("#testb12").click(function(){
+        $("#testc12").hide();
+      })
+    </script>
+    </div>
+  </div>
+
+      <button id="testa13" type="button" class="btn border：0">盆腔</button>
+
+      <div id="testc13" ;">
+      <ul class="list-unstyled">
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝囊肿&q%5Bnum_cont%5D=&commit=查询">肝囊肿</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝多发囊肿&q%5Bnum_cont%5D=&commit=查询">肝多发囊肿</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=慢性血吸虫性肝病&q%5Bnum_cont%5D=&commit=查询">慢性血吸虫性肝病</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=血吸虫性肝硬化&q%5Bnum_cont%5D=&commit=查询">血吸虫性肝硬化</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=脂肪肝&q%5Bnum_cont%5D=&commit=查询">脂肪肝</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=脂肪肝倾向&q%5Bnum_cont%5D=&commit=查询">脂肪肝倾向</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝内钙化灶&q%5Bnum_cont%5D=&commit=查询">肝内钙化灶</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=血管瘤&q%5Bnum_cont%5D=&commit=查询">肝血管瘤</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝占位&q%5Bnum_cont%5D=&commit=查询">肝占位</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝内胆管胆固醇结晶&q%5Bnum_cont%5D=&commit=查询">肝内胆管胆固醇结晶</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=慢性肝病&q%5Bnum_cont%5D=&commit=查询">慢性肝病</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝门静脉高压&q%5Bnum_cont%5D=&commit=查询">肝门静脉高压</a></li>
+      </ul>
+      <script>
+        $("#testc13").hide();
+
+        $("#testa13").click(function(){
+          $("#testc13").show();
+        })
+
+        $("#testb13").click(function(){
+          $("#testc13").hide();
+        })
+      </script>
+      </div>
+    </div>
+
+<script>
+  $("#testc11").hide();
+
+  $("#testa11").click(function(){
+    $("#testc11").show();
+  })
+
+  $("#testb11").click(function(){
+    $("#testc11").hide();
+  })
+</script>
+</div>
+</div>
+
+<li id="testa111" type="button" class="btn border：0">心脏</li>
+
+<div id="testc111" ;">
+<button id="testb111" type="button" class="btn border：0">B</button>
+
+  <button id="testa14" type="button" class="btn border：0">常规</button>
+
+  <div id="testc14" ;">
+  <ul class="list-unstyled">
+  <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝囊肿&q%5Bnum_cont%5D=&commit=查询">肝囊肿</a></li>
+  <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝多发囊肿&q%5Bnum_cont%5D=&commit=查询">肝多发囊肿</a></li>
+  <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=慢性血吸虫性肝病&q%5Bnum_cont%5D=&commit=查询">慢性血吸虫性肝病</a></li>
+  <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=血吸虫性肝硬化&q%5Bnum_cont%5D=&commit=查询">血吸虫性肝硬化</a></li>
+  <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=脂肪肝&q%5Bnum_cont%5D=&commit=查询">脂肪肝</a></li>
+  <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=脂肪肝倾向&q%5Bnum_cont%5D=&commit=查询">脂肪肝倾向</a></li>
+  <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝内钙化灶&q%5Bnum_cont%5D=&commit=查询">肝内钙化灶</a></li>
+  <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=血管瘤&q%5Bnum_cont%5D=&commit=查询">肝血管瘤</a></li>
+  <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝占位&q%5Bnum_cont%5D=&commit=查询">肝占位</a></li>
+  <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝内胆管胆固醇结晶&q%5Bnum_cont%5D=&commit=查询">肝内胆管胆固醇结晶</a></li>
+  <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=慢性肝病&q%5Bnum_cont%5D=&commit=查询">慢性肝病</a></li>
+  <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝门静脉高压&q%5Bnum_cont%5D=&commit=查询">肝门静脉高压</a></li>
+  </ul>
+  <script>
+    $("#testc14").hide();
+
+    $("#testa14").click(function(){
+      $("#testc14").show();
+    })
+
+    $("#testb14").click(function(){
+      $("#testc14").hide();
+    })
+  </script>
+  </div>
+
+  <div id="testc111" ;">
+
+    <button id="testa15" type="button" class="btn border：0">心肌病</button>
+
+    <div id="testc15" ;">
+    <ul class="list-unstyled">
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝囊肿&q%5Bnum_cont%5D=&commit=查询">肝囊肿</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝多发囊肿&q%5Bnum_cont%5D=&commit=查询">肝多发囊肿</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=慢性血吸虫性肝病&q%5Bnum_cont%5D=&commit=查询">慢性血吸虫性肝病</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=血吸虫性肝硬化&q%5Bnum_cont%5D=&commit=查询">血吸虫性肝硬化</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=脂肪肝&q%5Bnum_cont%5D=&commit=查询">脂肪肝</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=脂肪肝倾向&q%5Bnum_cont%5D=&commit=查询">脂肪肝倾向</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝内钙化灶&q%5Bnum_cont%5D=&commit=查询">肝内钙化灶</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=血管瘤&q%5Bnum_cont%5D=&commit=查询">肝血管瘤</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝占位&q%5Bnum_cont%5D=&commit=查询">肝占位</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝内胆管胆固醇结晶&q%5Bnum_cont%5D=&commit=查询">肝内胆管胆固醇结晶</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=慢性肝病&q%5Bnum_cont%5D=&commit=查询">慢性肝病</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝门静脉高压&q%5Bnum_cont%5D=&commit=查询">肝门静脉高压</a></li>
+    </ul>
+    <script>
+      $("#testc15").hide();
+
+      $("#testa15").click(function(){
+        $("#testc15").show();
+      })
+
+      $("#testb15").click(function(){
+        $("#testc15").hide();
+      })
+    </script>
+    </div>
+
+    <div id="testc111" ;">
+
+      <button id="testa16" type="button" class="btn border：0">先心</button>
+
+      <div id="testc16" ;">
+      <ul class="list-unstyled">
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝囊肿&q%5Bnum_cont%5D=&commit=查询">肝囊肿</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝多发囊肿&q%5Bnum_cont%5D=&commit=查询">肝多发囊肿</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=慢性血吸虫性肝病&q%5Bnum_cont%5D=&commit=查询">慢性血吸虫性肝病</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=血吸虫性肝硬化&q%5Bnum_cont%5D=&commit=查询">血吸虫性肝硬化</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=脂肪肝&q%5Bnum_cont%5D=&commit=查询">脂肪肝</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=脂肪肝倾向&q%5Bnum_cont%5D=&commit=查询">脂肪肝倾向</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝内钙化灶&q%5Bnum_cont%5D=&commit=查询">肝内钙化灶</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=血管瘤&q%5Bnum_cont%5D=&commit=查询">肝血管瘤</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝占位&q%5Bnum_cont%5D=&commit=查询">肝占位</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝内胆管胆固醇结晶&q%5Bnum_cont%5D=&commit=查询">肝内胆管胆固醇结晶</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=慢性肝病&q%5Bnum_cont%5D=&commit=查询">慢性肝病</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝门静脉高压&q%5Bnum_cont%5D=&commit=查询">肝门静脉高压</a></li>
+      </ul>
+      <script>
+        $("#testc16").hide();
+
+        $("#testa16").click(function(){
+          $("#testc16").show();
+        })
+
+        $("#testb16").click(function(){
+          $("#testc16").hide();
+        })
+      </script>
+      </div>
+
+    <div id="testc111" ;">
+
+      <button id="testa17" type="button" class="btn border：0">心包</button>
+
+      <div id="testc17" ;">
+      <ul class="list-unstyled">
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝囊肿&q%5Bnum_cont%5D=&commit=查询">肝囊肿</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝多发囊肿&q%5Bnum_cont%5D=&commit=查询">肝多发囊肿</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=慢性血吸虫性肝病&q%5Bnum_cont%5D=&commit=查询">慢性血吸虫性肝病</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=血吸虫性肝硬化&q%5Bnum_cont%5D=&commit=查询">血吸虫性肝硬化</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=脂肪肝&q%5Bnum_cont%5D=&commit=查询">脂肪肝</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=脂肪肝倾向&q%5Bnum_cont%5D=&commit=查询">脂肪肝倾向</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝内钙化灶&q%5Bnum_cont%5D=&commit=查询">肝内钙化灶</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=血管瘤&q%5Bnum_cont%5D=&commit=查询">肝血管瘤</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝占位&q%5Bnum_cont%5D=&commit=查询">肝占位</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝内胆管胆固醇结晶&q%5Bnum_cont%5D=&commit=查询">肝内胆管胆固醇结晶</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=慢性肝病&q%5Bnum_cont%5D=&commit=查询">慢性肝病</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝门静脉高压&q%5Bnum_cont%5D=&commit=查询">肝门静脉高压</a></li>
+      </ul>
+      <script>
+        $("#testc17").hide();
+
+        $("#testa17").click(function(){
+          $("#testc17").show();
+        })
+
+        $("#testb17").click(function(){
+          $("#testc17").hide();
+        })
+      </script>
+      </div>
+</div>
+
+<div id="testc111" ;">
+    <button id="testa18" type="button" class="btn border：0">肿瘤</button>
+
+    <div id="testc18" ;">
+    <ul class="list-unstyled">
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝囊肿&q%5Bnum_cont%5D=&commit=查询">肝囊肿</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝多发囊肿&q%5Bnum_cont%5D=&commit=查询">肝多发囊肿</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=慢性血吸虫性肝病&q%5Bnum_cont%5D=&commit=查询">慢性血吸虫性肝病</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=血吸虫性肝硬化&q%5Bnum_cont%5D=&commit=查询">血吸虫性肝硬化</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=脂肪肝&q%5Bnum_cont%5D=&commit=查询">脂肪肝</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=脂肪肝倾向&q%5Bnum_cont%5D=&commit=查询">脂肪肝倾向</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝内钙化灶&q%5Bnum_cont%5D=&commit=查询">肝内钙化灶</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=血管瘤&q%5Bnum_cont%5D=&commit=查询">肝血管瘤</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝占位&q%5Bnum_cont%5D=&commit=查询">肝占位</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝内胆管胆固醇结晶&q%5Bnum_cont%5D=&commit=查询">肝内胆管胆固醇结晶</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=慢性肝病&q%5Bnum_cont%5D=&commit=查询">慢性肝病</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝门静脉高压&q%5Bnum_cont%5D=&commit=查询">肝门静脉高压</a></li>
+    </ul>
+    <script>
+      $("#testc18").hide();
+
+      $("#testa18").click(function(){
+        $("#testc18").show();
+      })
+
+      $("#testb18").click(function(){
+        $("#testc18").hide();
+      })
+    </script>
+    </div>
+</div>
+
+    <button id="testa19" type="button" class="btn border：0">食管心超</button>
+
+    <div id="testc19" ;">
+    <ul class="list-unstyled">
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝囊肿&q%5Bnum_cont%5D=&commit=查询">肝囊肿</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝多发囊肿&q%5Bnum_cont%5D=&commit=查询">肝多发囊肿</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=慢性血吸虫性肝病&q%5Bnum_cont%5D=&commit=查询">慢性血吸虫性肝病</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=血吸虫性肝硬化&q%5Bnum_cont%5D=&commit=查询">血吸虫性肝硬化</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=脂肪肝&q%5Bnum_cont%5D=&commit=查询">脂肪肝</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=脂肪肝倾向&q%5Bnum_cont%5D=&commit=查询">脂肪肝倾向</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝内钙化灶&q%5Bnum_cont%5D=&commit=查询">肝内钙化灶</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=血管瘤&q%5Bnum_cont%5D=&commit=查询">肝血管瘤</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝占位&q%5Bnum_cont%5D=&commit=查询">肝占位</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝内胆管胆固醇结晶&q%5Bnum_cont%5D=&commit=查询">肝内胆管胆固醇结晶</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=慢性肝病&q%5Bnum_cont%5D=&commit=查询">慢性肝病</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝门静脉高压&q%5Bnum_cont%5D=&commit=查询">肝门静脉高压</a></li>
+    </ul>
+    <script>
+      $("#testc19").hide();
+
+      $("#testa19").click(function(){
+        $("#testc19").show();
+      })
+
+      $("#testb19").click(function(){
+        $("#testc19").hide();
+      })
+    </script>
+    </div>
+  </div>
+
+<script>
+  $("#testc111").hide();
+
+  $("#testa111").click(function(){
+    $("#testc111").show();
+  })
+
+  $("#testb111").click(function(){
+    $("#testc111").hide();
+  })
+</script>
+</div>
+</div>
+
+
+<li id="testa112" type="button" class="btn border：0">血管</li>
+
+<div id="testc112" ;">
+<button id="testb112" type="button" class="btn border：0">Back</button>
+
+  <button id="testa20" type="button" class="btn border：0">斑块及狭窄</button>
+
+  <div id="testc20" ;">
+  <ul class="list-unstyled">
+  <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝囊肿&q%5Bnum_cont%5D=&commit=查询">肝囊肿</a></li>
+  <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝多发囊肿&q%5Bnum_cont%5D=&commit=查询">肝多发囊肿</a></li>
+  <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=慢性血吸虫性肝病&q%5Bnum_cont%5D=&commit=查询">慢性血吸虫性肝病</a></li>
+  <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=血吸虫性肝硬化&q%5Bnum_cont%5D=&commit=查询">血吸虫性肝硬化</a></li>
+  <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=脂肪肝&q%5Bnum_cont%5D=&commit=查询">脂肪肝</a></li>
+  <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=脂肪肝倾向&q%5Bnum_cont%5D=&commit=查询">脂肪肝倾向</a></li>
+  <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝内钙化灶&q%5Bnum_cont%5D=&commit=查询">肝内钙化灶</a></li>
+  <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=血管瘤&q%5Bnum_cont%5D=&commit=查询">肝血管瘤</a></li>
+  <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝占位&q%5Bnum_cont%5D=&commit=查询">肝占位</a></li>
+  <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝内胆管胆固醇结晶&q%5Bnum_cont%5D=&commit=查询">肝内胆管胆固醇结晶</a></li>
+  <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=慢性肝病&q%5Bnum_cont%5D=&commit=查询">慢性肝病</a></li>
+  <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝门静脉高压&q%5Bnum_cont%5D=&commit=查询">肝门静脉高压</a></li>
+  </ul>
+  <script>
+    $("#testc20").hide();
+
+    $("#testa20").click(function(){
+      $("#testc20").show();
+    })
+
+    $("#testb20").click(function(){
+      $("#testc20").hide();
+    })
+  </script>
+  </div>
+
+  <div id="testc112" ;">
+
+    <button id="testa21" type="button" class="btn border：0">血栓</button>
+
+    <div id="testc21" ;">
+    <ul class="list-unstyled">
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝囊肿&q%5Bnum_cont%5D=&commit=查询">肝囊肿</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝多发囊肿&q%5Bnum_cont%5D=&commit=查询">肝多发囊肿</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=慢性血吸虫性肝病&q%5Bnum_cont%5D=&commit=查询">慢性血吸虫性肝病</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=血吸虫性肝硬化&q%5Bnum_cont%5D=&commit=查询">血吸虫性肝硬化</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=脂肪肝&q%5Bnum_cont%5D=&commit=查询">脂肪肝</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=脂肪肝倾向&q%5Bnum_cont%5D=&commit=查询">脂肪肝倾向</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝内钙化灶&q%5Bnum_cont%5D=&commit=查询">肝内钙化灶</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=血管瘤&q%5Bnum_cont%5D=&commit=查询">肝血管瘤</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝占位&q%5Bnum_cont%5D=&commit=查询">肝占位</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝内胆管胆固醇结晶&q%5Bnum_cont%5D=&commit=查询">肝内胆管胆固醇结晶</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=慢性肝病&q%5Bnum_cont%5D=&commit=查询">慢性肝病</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝门静脉高压&q%5Bnum_cont%5D=&commit=查询">肝门静脉高压</a></li>
+    </ul>
+    <script>
+      $("#testc21").hide();
+
+      $("#testa21").click(function(){
+        $("#testc21").show();
+      })
+
+      $("#testb21").click(function(){
+        $("#testc21").hide();
+      })
+    </script>
+    </div>
+
+    <div id="testc112" ;">
+
+      <button id="testa22" type="button" class="btn border：0">动静脉瘤、夹层</button>
+
+      <div id="testc22" ;">
+      <ul class="list-unstyled">
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝囊肿&q%5Bnum_cont%5D=&commit=查询">肝囊肿</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝多发囊肿&q%5Bnum_cont%5D=&commit=查询">肝多发囊肿</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=慢性血吸虫性肝病&q%5Bnum_cont%5D=&commit=查询">慢性血吸虫性肝病</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=血吸虫性肝硬化&q%5Bnum_cont%5D=&commit=查询">血吸虫性肝硬化</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=脂肪肝&q%5Bnum_cont%5D=&commit=查询">脂肪肝</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=脂肪肝倾向&q%5Bnum_cont%5D=&commit=查询">脂肪肝倾向</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝内钙化灶&q%5Bnum_cont%5D=&commit=查询">肝内钙化灶</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=血管瘤&q%5Bnum_cont%5D=&commit=查询">肝血管瘤</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝占位&q%5Bnum_cont%5D=&commit=查询">肝占位</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝内胆管胆固醇结晶&q%5Bnum_cont%5D=&commit=查询">肝内胆管胆固醇结晶</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=慢性肝病&q%5Bnum_cont%5D=&commit=查询">慢性肝病</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝门静脉高压&q%5Bnum_cont%5D=&commit=查询">肝门静脉高压</a></li>
+      </ul>
+      <script>
+        $("#testc22").hide();
+
+        $("#testa22").click(function(){
+          $("#testc22").show();
+        })
+
+        $("#testb22").click(function(){
+          $("#testc22").hide();
+        })
+      </script>
+      </div>
+
+    <div id="testc112" ;">
+
+      <button id="testa23" type="button" class="btn border：0">左肾静脉胡桃夹</button>
+
+      <div id="testc23" ;">
+      <ul class="list-unstyled">
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝囊肿&q%5Bnum_cont%5D=&commit=查询">肝囊肿</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝多发囊肿&q%5Bnum_cont%5D=&commit=查询">肝多发囊肿</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=慢性血吸虫性肝病&q%5Bnum_cont%5D=&commit=查询">慢性血吸虫性肝病</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=血吸虫性肝硬化&q%5Bnum_cont%5D=&commit=查询">血吸虫性肝硬化</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=脂肪肝&q%5Bnum_cont%5D=&commit=查询">脂肪肝</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=脂肪肝倾向&q%5Bnum_cont%5D=&commit=查询">脂肪肝倾向</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝内钙化灶&q%5Bnum_cont%5D=&commit=查询">肝内钙化灶</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=血管瘤&q%5Bnum_cont%5D=&commit=查询">肝血管瘤</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝占位&q%5Bnum_cont%5D=&commit=查询">肝占位</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝内胆管胆固醇结晶&q%5Bnum_cont%5D=&commit=查询">肝内胆管胆固醇结晶</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=慢性肝病&q%5Bnum_cont%5D=&commit=查询">慢性肝病</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝门静脉高压&q%5Bnum_cont%5D=&commit=查询">肝门静脉高压</a></li>
+      </ul>
+      <script>
+        $("#testc23").hide();
+
+        $("#testa23").click(function(){
+          $("#testc23").show();
+        })
+
+        $("#testb23").click(function(){
+          $("#testc23").hide();
+        })
+      </script>
+      </div>
+</div>
+
+<div id="testc112" ;">
+    <button id="testa24" type="button" class="btn border：0">造瘘评估</button>
+
+    <div id="testc24" ;">
+    <ul class="list-unstyled">
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝囊肿&q%5Bnum_cont%5D=&commit=查询">肝囊肿</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝多发囊肿&q%5Bnum_cont%5D=&commit=查询">肝多发囊肿</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=慢性血吸虫性肝病&q%5Bnum_cont%5D=&commit=查询">慢性血吸虫性肝病</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=血吸虫性肝硬化&q%5Bnum_cont%5D=&commit=查询">血吸虫性肝硬化</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=脂肪肝&q%5Bnum_cont%5D=&commit=查询">脂肪肝</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=脂肪肝倾向&q%5Bnum_cont%5D=&commit=查询">脂肪肝倾向</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝内钙化灶&q%5Bnum_cont%5D=&commit=查询">肝内钙化灶</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=血管瘤&q%5Bnum_cont%5D=&commit=查询">肝血管瘤</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝占位&q%5Bnum_cont%5D=&commit=查询">肝占位</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝内胆管胆固醇结晶&q%5Bnum_cont%5D=&commit=查询">肝内胆管胆固醇结晶</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=慢性肝病&q%5Bnum_cont%5D=&commit=查询">慢性肝病</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝门静脉高压&q%5Bnum_cont%5D=&commit=查询">肝门静脉高压</a></li>
+    </ul>
+    <script>
+      $("#testc24").hide();
+
+      $("#testa24").click(function(){
+        $("#testc24").show();
+      })
+
+      $("#testb24").click(function(){
+        $("#testc24").hide();
+      })
+    </script>
+    </div>
+</div>
+
+    <button id="testa25" type="button" class="btn border：0">畸形</button>
+
+    <div id="testc25" ;">
+    <ul class="list-unstyled">
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝囊肿&q%5Bnum_cont%5D=&commit=查询">肝囊肿</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝多发囊肿&q%5Bnum_cont%5D=&commit=查询">肝多发囊肿</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=慢性血吸虫性肝病&q%5Bnum_cont%5D=&commit=查询">慢性血吸虫性肝病</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=血吸虫性肝硬化&q%5Bnum_cont%5D=&commit=查询">血吸虫性肝硬化</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=脂肪肝&q%5Bnum_cont%5D=&commit=查询">脂肪肝</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=脂肪肝倾向&q%5Bnum_cont%5D=&commit=查询">脂肪肝倾向</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝内钙化灶&q%5Bnum_cont%5D=&commit=查询">肝内钙化灶</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=血管瘤&q%5Bnum_cont%5D=&commit=查询">肝血管瘤</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝占位&q%5Bnum_cont%5D=&commit=查询">肝占位</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝内胆管胆固醇结晶&q%5Bnum_cont%5D=&commit=查询">肝内胆管胆固醇结晶</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=慢性肝病&q%5Bnum_cont%5D=&commit=查询">慢性肝病</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝门静脉高压&q%5Bnum_cont%5D=&commit=查询">肝门静脉高压</a></li>
+    </ul>
+    <script>
+      $("#testc25").hide();
+
+      $("#testa25").click(function(){
+        $("#testc25").show();
+      })
+
+      $("#testb25").click(function(){
+        $("#testc25").hide();
+      })
+    </script>
+    </div>
+  </div>
+
+<script>
+  $("#testc112").hide();
+
+  $("#testa112").click(function(){
+    $("#testc112").show();
+  })
+
+  $("#testb112").click(function(){
+    $("#testc112").hide();
+  })
+</script>
+</div>
+</div>
+
+<li id="testa113" type="button" class="btn border：0">妇科</li>
+
+<div id="testc113" ;">
+<button id="testb113" type="button" class="btn border：0">Back</button>
+
+  <button id="testa26" type="button" class="btn border：0">子宫</button>
+
+  <div id="testc26" ;">
+  <ul class="list-unstyled">
+  <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝囊肿&q%5Bnum_cont%5D=&commit=查询">肝囊肿</a></li>
+  <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝多发囊肿&q%5Bnum_cont%5D=&commit=查询">肝多发囊肿</a></li>
+  <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=慢性血吸虫性肝病&q%5Bnum_cont%5D=&commit=查询">慢性血吸虫性肝病</a></li>
+  <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=血吸虫性肝硬化&q%5Bnum_cont%5D=&commit=查询">血吸虫性肝硬化</a></li>
+  <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=脂肪肝&q%5Bnum_cont%5D=&commit=查询">脂肪肝</a></li>
+  <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=脂肪肝倾向&q%5Bnum_cont%5D=&commit=查询">脂肪肝倾向</a></li>
+  <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝内钙化灶&q%5Bnum_cont%5D=&commit=查询">肝内钙化灶</a></li>
+  <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=血管瘤&q%5Bnum_cont%5D=&commit=查询">肝血管瘤</a></li>
+  <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝占位&q%5Bnum_cont%5D=&commit=查询">肝占位</a></li>
+  <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝内胆管胆固醇结晶&q%5Bnum_cont%5D=&commit=查询">肝内胆管胆固醇结晶</a></li>
+  <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=慢性肝病&q%5Bnum_cont%5D=&commit=查询">慢性肝病</a></li>
+  <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝门静脉高压&q%5Bnum_cont%5D=&commit=查询">肝门静脉高压</a></li>
+  </ul>
+  <script>
+    $("#testc26").hide();
+
+    $("#testa26").click(function(){
+      $("#testc26").show();
+    })
+
+    $("#testb26").click(function(){
+      $("#testc26").hide();
+    })
+  </script>
+  </div>
+
+  <div id="testc113" ;">
+
+    <button id="testa27" type="button" class="btn border：0">输卵管</button>
+
+    <div id="testc27" ;">
+    <ul class="list-unstyled">
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝囊肿&q%5Bnum_cont%5D=&commit=查询">肝囊肿</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝多发囊肿&q%5Bnum_cont%5D=&commit=查询">肝多发囊肿</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=慢性血吸虫性肝病&q%5Bnum_cont%5D=&commit=查询">慢性血吸虫性肝病</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=血吸虫性肝硬化&q%5Bnum_cont%5D=&commit=查询">血吸虫性肝硬化</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=脂肪肝&q%5Bnum_cont%5D=&commit=查询">脂肪肝</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=脂肪肝倾向&q%5Bnum_cont%5D=&commit=查询">脂肪肝倾向</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝内钙化灶&q%5Bnum_cont%5D=&commit=查询">肝内钙化灶</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=血管瘤&q%5Bnum_cont%5D=&commit=查询">肝血管瘤</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝占位&q%5Bnum_cont%5D=&commit=查询">肝占位</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝内胆管胆固醇结晶&q%5Bnum_cont%5D=&commit=查询">肝内胆管胆固醇结晶</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=慢性肝病&q%5Bnum_cont%5D=&commit=查询">慢性肝病</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝门静脉高压&q%5Bnum_cont%5D=&commit=查询">肝门静脉高压</a></li>
+    </ul>
+    <script>
+      $("#testc27").hide();
+
+      $("#testa27").click(function(){
+        $("#testc27").show();
+      })
+
+      $("#testb27").click(function(){
+        $("#testc27").hide();
+      })
+    </script>
+    </div>
+
+    <div id="testc113" ;">
+
+      <button id="testa28" type="button" class="btn border：0">卵巢</button>
+
+      <div id="testc28" ;">
+      <ul class="list-unstyled">
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝囊肿&q%5Bnum_cont%5D=&commit=查询">肝囊肿</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝多发囊肿&q%5Bnum_cont%5D=&commit=查询">肝多发囊肿</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=慢性血吸虫性肝病&q%5Bnum_cont%5D=&commit=查询">慢性血吸虫性肝病</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=血吸虫性肝硬化&q%5Bnum_cont%5D=&commit=查询">血吸虫性肝硬化</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=脂肪肝&q%5Bnum_cont%5D=&commit=查询">脂肪肝</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=脂肪肝倾向&q%5Bnum_cont%5D=&commit=查询">脂肪肝倾向</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝内钙化灶&q%5Bnum_cont%5D=&commit=查询">肝内钙化灶</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=血管瘤&q%5Bnum_cont%5D=&commit=查询">肝血管瘤</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝占位&q%5Bnum_cont%5D=&commit=查询">肝占位</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝内胆管胆固醇结晶&q%5Bnum_cont%5D=&commit=查询">肝内胆管胆固醇结晶</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=慢性肝病&q%5Bnum_cont%5D=&commit=查询">慢性肝病</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝门静脉高压&q%5Bnum_cont%5D=&commit=查询">肝门静脉高压</a></li>
+      </ul>
+      <script>
+        $("#testc28").hide();
+
+        $("#testa28").click(function(){
+          $("#testc28").show();
+        })
+
+        $("#testb28").click(function(){
+          $("#testc28").hide();
+        })
+      </script>
+      </div>
+
+    <div id="testc113" ;">
+
+      <button id="testa29" type="button" class="btn border：0">盆腔</button>
+
+      <div id="testc29" ;">
+      <ul class="list-unstyled">
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝囊肿&q%5Bnum_cont%5D=&commit=查询">肝囊肿</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝多发囊肿&q%5Bnum_cont%5D=&commit=查询">肝多发囊肿</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=慢性血吸虫性肝病&q%5Bnum_cont%5D=&commit=查询">慢性血吸虫性肝病</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=血吸虫性肝硬化&q%5Bnum_cont%5D=&commit=查询">血吸虫性肝硬化</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=脂肪肝&q%5Bnum_cont%5D=&commit=查询">脂肪肝</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=脂肪肝倾向&q%5Bnum_cont%5D=&commit=查询">脂肪肝倾向</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝内钙化灶&q%5Bnum_cont%5D=&commit=查询">肝内钙化灶</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=血管瘤&q%5Bnum_cont%5D=&commit=查询">肝血管瘤</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝占位&q%5Bnum_cont%5D=&commit=查询">肝占位</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝内胆管胆固醇结晶&q%5Bnum_cont%5D=&commit=查询">肝内胆管胆固醇结晶</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=慢性肝病&q%5Bnum_cont%5D=&commit=查询">慢性肝病</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝门静脉高压&q%5Bnum_cont%5D=&commit=查询">肝门静脉高压</a></li>
+      </ul>
+      <script>
+        $("#testc29").hide();
+
+        $("#testa29").click(function(){
+          $("#testc29").show();
+        })
+
+        $("#testb29").click(function(){
+          $("#testc29").hide();
+        })
+      </script>
+      </div>
+</div>
+
+    <button id="testa30" type="button" class="btn border：0">节育器</button>
+
+    <div id="testc30" ;">
+    <ul class="list-unstyled">
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝囊肿&q%5Bnum_cont%5D=&commit=查询">肝囊肿</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝多发囊肿&q%5Bnum_cont%5D=&commit=查询">肝多发囊肿</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=慢性血吸虫性肝病&q%5Bnum_cont%5D=&commit=查询">慢性血吸虫性肝病</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=血吸虫性肝硬化&q%5Bnum_cont%5D=&commit=查询">血吸虫性肝硬化</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=脂肪肝&q%5Bnum_cont%5D=&commit=查询">脂肪肝</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=脂肪肝倾向&q%5Bnum_cont%5D=&commit=查询">脂肪肝倾向</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝内钙化灶&q%5Bnum_cont%5D=&commit=查询">肝内钙化灶</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=血管瘤&q%5Bnum_cont%5D=&commit=查询">肝血管瘤</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝占位&q%5Bnum_cont%5D=&commit=查询">肝占位</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝内胆管胆固醇结晶&q%5Bnum_cont%5D=&commit=查询">肝内胆管胆固醇结晶</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=慢性肝病&q%5Bnum_cont%5D=&commit=查询">慢性肝病</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝门静脉高压&q%5Bnum_cont%5D=&commit=查询">肝门静脉高压</a></li>
+    </ul>
+    <script>
+      $("#testc30").hide();
+
+      $("#testa30").click(function(){
+        $("#testc30").show();
+      })
+
+      $("#testb30").click(function(){
+        $("#testc30").hide();
+      })
+    </script>
+    </div>
+</div>
+
+<script>
+  $("#testc113").hide();
+
+  $("#testa113").click(function(){
+    $("#testc113").show();
+  })
+
+  $("#testb113").click(function(){
+    $("#testc113").hide();
+  })
+</script>
+</div>
+</div>
+
+<li id="testa114" type="button" class="btn border：0">产科</li>
+
+<div id="testc114" ;">
+<button id="testb114" type="button" class="btn border：0">Back</button>
+
+  <button id="testa31" type="button" class="btn border：0">早孕</button>
+
+  <div id="testc31" ;">
+  <ul class="list-unstyled">
+  <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝囊肿&q%5Bnum_cont%5D=&commit=查询">肝囊肿</a></li>
+  <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝多发囊肿&q%5Bnum_cont%5D=&commit=查询">肝多发囊肿</a></li>
+  <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=慢性血吸虫性肝病&q%5Bnum_cont%5D=&commit=查询">慢性血吸虫性肝病</a></li>
+  <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=血吸虫性肝硬化&q%5Bnum_cont%5D=&commit=查询">血吸虫性肝硬化</a></li>
+  <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=脂肪肝&q%5Bnum_cont%5D=&commit=查询">脂肪肝</a></li>
+  <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=脂肪肝倾向&q%5Bnum_cont%5D=&commit=查询">脂肪肝倾向</a></li>
+  <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝内钙化灶&q%5Bnum_cont%5D=&commit=查询">肝内钙化灶</a></li>
+  <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=血管瘤&q%5Bnum_cont%5D=&commit=查询">肝血管瘤</a></li>
+  <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝占位&q%5Bnum_cont%5D=&commit=查询">肝占位</a></li>
+  <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝内胆管胆固醇结晶&q%5Bnum_cont%5D=&commit=查询">肝内胆管胆固醇结晶</a></li>
+  <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=慢性肝病&q%5Bnum_cont%5D=&commit=查询">慢性肝病</a></li>
+  <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝门静脉高压&q%5Bnum_cont%5D=&commit=查询">肝门静脉高压</a></li>
+  </ul>
+  <script>
+    $("#testc31").hide();
+
+    $("#testa31").click(function(){
+      $("#testc31").show();
+    })
+
+    $("#testb31").click(function(){
+      $("#testc31").hide();
+    })
+  </script>
+  </div>
+
+  <div id="testc114" ;">
+
+    <button id="testa32" type="button" class="btn border：0">中孕</button>
+
+    <div id="testc32" ;">
+    <ul class="list-unstyled">
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝囊肿&q%5Bnum_cont%5D=&commit=查询">肝囊肿</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝多发囊肿&q%5Bnum_cont%5D=&commit=查询">肝多发囊肿</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=慢性血吸虫性肝病&q%5Bnum_cont%5D=&commit=查询">慢性血吸虫性肝病</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=血吸虫性肝硬化&q%5Bnum_cont%5D=&commit=查询">血吸虫性肝硬化</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=脂肪肝&q%5Bnum_cont%5D=&commit=查询">脂肪肝</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=脂肪肝倾向&q%5Bnum_cont%5D=&commit=查询">脂肪肝倾向</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝内钙化灶&q%5Bnum_cont%5D=&commit=查询">肝内钙化灶</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=血管瘤&q%5Bnum_cont%5D=&commit=查询">肝血管瘤</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝占位&q%5Bnum_cont%5D=&commit=查询">肝占位</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝内胆管胆固醇结晶&q%5Bnum_cont%5D=&commit=查询">肝内胆管胆固醇结晶</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=慢性肝病&q%5Bnum_cont%5D=&commit=查询">慢性肝病</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝门静脉高压&q%5Bnum_cont%5D=&commit=查询">肝门静脉高压</a></li>
+    </ul>
+    <script>
+      $("#testc32").hide();
+
+      $("#testa32").click(function(){
+        $("#testc32").show();
+      })
+
+      $("#testb32").click(function(){
+        $("#testc32").hide();
+      })
+    </script>
+    </div>
+
+    <div id="testc114" ;">
+
+      <button id="testa33" type="button" class="btn border：0">疤痕妊娠</button>
+
+      <div id="testc33" ;">
+      <ul class="list-unstyled">
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝囊肿&q%5Bnum_cont%5D=&commit=查询">肝囊肿</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝多发囊肿&q%5Bnum_cont%5D=&commit=查询">肝多发囊肿</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=慢性血吸虫性肝病&q%5Bnum_cont%5D=&commit=查询">慢性血吸虫性肝病</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=血吸虫性肝硬化&q%5Bnum_cont%5D=&commit=查询">血吸虫性肝硬化</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=脂肪肝&q%5Bnum_cont%5D=&commit=查询">脂肪肝</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=脂肪肝倾向&q%5Bnum_cont%5D=&commit=查询">脂肪肝倾向</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝内钙化灶&q%5Bnum_cont%5D=&commit=查询">肝内钙化灶</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=血管瘤&q%5Bnum_cont%5D=&commit=查询">肝血管瘤</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝占位&q%5Bnum_cont%5D=&commit=查询">肝占位</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝内胆管胆固醇结晶&q%5Bnum_cont%5D=&commit=查询">肝内胆管胆固醇结晶</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=慢性肝病&q%5Bnum_cont%5D=&commit=查询">慢性肝病</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝门静脉高压&q%5Bnum_cont%5D=&commit=查询">肝门静脉高压</a></li>
+      </ul>
+      <script>
+        $("#testc33").hide();
+
+        $("#testa33").click(function(){
+          $("#testc33").show();
+        })
+
+        $("#testb33").click(function(){
+          $("#testc33").hide();
+        })
+      </script>
+      </div>
+
+    <div id="testc114" ;">
+
+      <button id="testa34" type="button" class="btn border：0">备用1</button>
+
+      <div id="testc34" ;">
+      <ul class="list-unstyled">
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝囊肿&q%5Bnum_cont%5D=&commit=查询">肝囊肿</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝多发囊肿&q%5Bnum_cont%5D=&commit=查询">肝多发囊肿</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=慢性血吸虫性肝病&q%5Bnum_cont%5D=&commit=查询">慢性血吸虫性肝病</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=血吸虫性肝硬化&q%5Bnum_cont%5D=&commit=查询">血吸虫性肝硬化</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=脂肪肝&q%5Bnum_cont%5D=&commit=查询">脂肪肝</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=脂肪肝倾向&q%5Bnum_cont%5D=&commit=查询">脂肪肝倾向</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝内钙化灶&q%5Bnum_cont%5D=&commit=查询">肝内钙化灶</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=血管瘤&q%5Bnum_cont%5D=&commit=查询">肝血管瘤</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝占位&q%5Bnum_cont%5D=&commit=查询">肝占位</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝内胆管胆固醇结晶&q%5Bnum_cont%5D=&commit=查询">肝内胆管胆固醇结晶</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=慢性肝病&q%5Bnum_cont%5D=&commit=查询">慢性肝病</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝门静脉高压&q%5Bnum_cont%5D=&commit=查询">肝门静脉高压</a></li>
+      </ul>
+      <script>
+        $("#testc34").hide();
+
+        $("#testa34").click(function(){
+          $("#testc34").show();
+        })
+
+        $("#testb34").click(function(){
+          $("#testc34").hide();
+        })
+      </script>
+      </div>
+</div>
+
+    <button id="testa35" type="button" class="btn border：0">备用2</button>
+
+    <div id="testc35" ;">
+    <ul class="list-unstyled">
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝囊肿&q%5Bnum_cont%5D=&commit=查询">肝囊肿</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝多发囊肿&q%5Bnum_cont%5D=&commit=查询">肝多发囊肿</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=慢性血吸虫性肝病&q%5Bnum_cont%5D=&commit=查询">慢性血吸虫性肝病</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=血吸虫性肝硬化&q%5Bnum_cont%5D=&commit=查询">血吸虫性肝硬化</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=脂肪肝&q%5Bnum_cont%5D=&commit=查询">脂肪肝</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=脂肪肝倾向&q%5Bnum_cont%5D=&commit=查询">脂肪肝倾向</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝内钙化灶&q%5Bnum_cont%5D=&commit=查询">肝内钙化灶</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=血管瘤&q%5Bnum_cont%5D=&commit=查询">肝血管瘤</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝占位&q%5Bnum_cont%5D=&commit=查询">肝占位</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝内胆管胆固醇结晶&q%5Bnum_cont%5D=&commit=查询">肝内胆管胆固醇结晶</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=慢性肝病&q%5Bnum_cont%5D=&commit=查询">慢性肝病</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝门静脉高压&q%5Bnum_cont%5D=&commit=查询">肝门静脉高压</a></li>
+    </ul>
+    <script>
+      $("#testc35").hide();
+
+      $("#testa35").click(function(){
+        $("#testc35").show();
+      })
+
+      $("#testb35").click(function(){
+        $("#testc35").hide();
+      })
+    </script>
+    </div>
+</div>
+
+<script>
+  $("#testc114").hide();
+
+  $("#testa114").click(function(){
+    $("#testc114").show();
+  })
+
+  $("#testb114").click(function(){
+    $("#testc114").hide();
+  })
+</script>
+</div>
+</div>
+
+<li id="testa115" type="button" class="btn border：0">胃肠</li>
+
+<div id="testc115" ;">
+<button id="testb115" type="button" class="btn border：0">Back</button>
+
+  <button id="testa36" type="button" class="btn border：0">胃</button>
+
+  <div id="testc36" ;">
+  <ul class="list-unstyled">
+  <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝囊肿&q%5Bnum_cont%5D=&commit=查询">肝囊肿</a></li>
+  <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝多发囊肿&q%5Bnum_cont%5D=&commit=查询">肝多发囊肿</a></li>
+  <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=慢性血吸虫性肝病&q%5Bnum_cont%5D=&commit=查询">慢性血吸虫性肝病</a></li>
+  <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=血吸虫性肝硬化&q%5Bnum_cont%5D=&commit=查询">血吸虫性肝硬化</a></li>
+  <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=脂肪肝&q%5Bnum_cont%5D=&commit=查询">脂肪肝</a></li>
+  <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=脂肪肝倾向&q%5Bnum_cont%5D=&commit=查询">脂肪肝倾向</a></li>
+  <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝内钙化灶&q%5Bnum_cont%5D=&commit=查询">肝内钙化灶</a></li>
+  <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=血管瘤&q%5Bnum_cont%5D=&commit=查询">肝血管瘤</a></li>
+  <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝占位&q%5Bnum_cont%5D=&commit=查询">肝占位</a></li>
+  <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝内胆管胆固醇结晶&q%5Bnum_cont%5D=&commit=查询">肝内胆管胆固醇结晶</a></li>
+  <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=慢性肝病&q%5Bnum_cont%5D=&commit=查询">慢性肝病</a></li>
+  <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝门静脉高压&q%5Bnum_cont%5D=&commit=查询">肝门静脉高压</a></li>
+  </ul>
+  <script>
+    $("#testc36").hide();
+
+    $("#testa36").click(function(){
+      $("#testc36").show();
+    })
+
+    $("#testb36").click(function(){
+      $("#testc36").hide();
+    })
+  </script>
+  </div>
+
+  <div id="testc115" ;">
+
+    <button id="testa37" type="button" class="btn border：0">肠</button>
+
+    <div id="testc37" ;">
+    <ul class="list-unstyled">
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝囊肿&q%5Bnum_cont%5D=&commit=查询">肝囊肿</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝多发囊肿&q%5Bnum_cont%5D=&commit=查询">肝多发囊肿</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=慢性血吸虫性肝病&q%5Bnum_cont%5D=&commit=查询">慢性血吸虫性肝病</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=血吸虫性肝硬化&q%5Bnum_cont%5D=&commit=查询">血吸虫性肝硬化</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=脂肪肝&q%5Bnum_cont%5D=&commit=查询">脂肪肝</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=脂肪肝倾向&q%5Bnum_cont%5D=&commit=查询">脂肪肝倾向</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝内钙化灶&q%5Bnum_cont%5D=&commit=查询">肝内钙化灶</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=血管瘤&q%5Bnum_cont%5D=&commit=查询">肝血管瘤</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝占位&q%5Bnum_cont%5D=&commit=查询">肝占位</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝内胆管胆固醇结晶&q%5Bnum_cont%5D=&commit=查询">肝内胆管胆固醇结晶</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=慢性肝病&q%5Bnum_cont%5D=&commit=查询">慢性肝病</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝门静脉高压&q%5Bnum_cont%5D=&commit=查询">肝门静脉高压</a></li>
+    </ul>
+    <script>
+      $("#testc37").hide();
+
+      $("#testa37").click(function(){
+        $("#testc37").show();
+      })
+
+      $("#testb37").click(function(){
+        $("#testc37").hide();
+      })
+    </script>
+    </div>
+
+    <div id="testc115" ;">
+
+      <button id="testa38" type="button" class="btn border：0">回盲部</button>
+
+      <div id="testc38" ;">
+      <ul class="list-unstyled">
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝囊肿&q%5Bnum_cont%5D=&commit=查询">肝囊肿</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝多发囊肿&q%5Bnum_cont%5D=&commit=查询">肝多发囊肿</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=慢性血吸虫性肝病&q%5Bnum_cont%5D=&commit=查询">慢性血吸虫性肝病</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=血吸虫性肝硬化&q%5Bnum_cont%5D=&commit=查询">血吸虫性肝硬化</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=脂肪肝&q%5Bnum_cont%5D=&commit=查询">脂肪肝</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=脂肪肝倾向&q%5Bnum_cont%5D=&commit=查询">脂肪肝倾向</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝内钙化灶&q%5Bnum_cont%5D=&commit=查询">肝内钙化灶</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=血管瘤&q%5Bnum_cont%5D=&commit=查询">肝血管瘤</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝占位&q%5Bnum_cont%5D=&commit=查询">肝占位</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝内胆管胆固醇结晶&q%5Bnum_cont%5D=&commit=查询">肝内胆管胆固醇结晶</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=慢性肝病&q%5Bnum_cont%5D=&commit=查询">慢性肝病</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝门静脉高压&q%5Bnum_cont%5D=&commit=查询">肝门静脉高压</a></li>
+      </ul>
+      <script>
+        $("#testc38").hide();
+
+        $("#testa38").click(function(){
+          $("#testc38").show();
+        })
+
+        $("#testb38").click(function(){
+          $("#testc38").hide();
+        })
+      </script>
+      </div>
+
+    <div id="testc115" ;">
+
+      <button id="testa39" type="button" class="btn border：0">肛管</button>
+
+      <div id="testc39" ;">
+      <ul class="list-unstyled">
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝囊肿&q%5Bnum_cont%5D=&commit=查询">肝囊肿</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝多发囊肿&q%5Bnum_cont%5D=&commit=查询">肝多发囊肿</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=慢性血吸虫性肝病&q%5Bnum_cont%5D=&commit=查询">慢性血吸虫性肝病</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=血吸虫性肝硬化&q%5Bnum_cont%5D=&commit=查询">血吸虫性肝硬化</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=脂肪肝&q%5Bnum_cont%5D=&commit=查询">脂肪肝</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=脂肪肝倾向&q%5Bnum_cont%5D=&commit=查询">脂肪肝倾向</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝内钙化灶&q%5Bnum_cont%5D=&commit=查询">肝内钙化灶</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=血管瘤&q%5Bnum_cont%5D=&commit=查询">肝血管瘤</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝占位&q%5Bnum_cont%5D=&commit=查询">肝占位</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝内胆管胆固醇结晶&q%5Bnum_cont%5D=&commit=查询">肝内胆管胆固醇结晶</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=慢性肝病&q%5Bnum_cont%5D=&commit=查询">慢性肝病</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝门静脉高压&q%5Bnum_cont%5D=&commit=查询">肝门静脉高压</a></li>
+      </ul>
+      <script>
+        $("#testc39").hide();
+
+        $("#testa39").click(function(){
+          $("#testc39").show();
+        })
+
+        $("#testb39").click(function(){
+          $("#testc39").hide();
+        })
+      </script>
+      </div>
+</div>
+
+    <button id="testa40" type="button" class="btn border：0">后腹膜</button>
+
+    <div id="testc40" ;">
+    <ul class="list-unstyled">
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝囊肿&q%5Bnum_cont%5D=&commit=查询">肝囊肿</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝多发囊肿&q%5Bnum_cont%5D=&commit=查询">肝多发囊肿</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=慢性血吸虫性肝病&q%5Bnum_cont%5D=&commit=查询">慢性血吸虫性肝病</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=血吸虫性肝硬化&q%5Bnum_cont%5D=&commit=查询">血吸虫性肝硬化</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=脂肪肝&q%5Bnum_cont%5D=&commit=查询">脂肪肝</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=脂肪肝倾向&q%5Bnum_cont%5D=&commit=查询">脂肪肝倾向</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝内钙化灶&q%5Bnum_cont%5D=&commit=查询">肝内钙化灶</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=血管瘤&q%5Bnum_cont%5D=&commit=查询">肝血管瘤</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝占位&q%5Bnum_cont%5D=&commit=查询">肝占位</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝内胆管胆固醇结晶&q%5Bnum_cont%5D=&commit=查询">肝内胆管胆固醇结晶</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=慢性肝病&q%5Bnum_cont%5D=&commit=查询">慢性肝病</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝门静脉高压&q%5Bnum_cont%5D=&commit=查询">肝门静脉高压</a></li>
+    </ul>
+    <script>
+      $("#testc40").hide();
+
+      $("#testa40").click(function(){
+        $("#testc40").show();
+      })
+
+      $("#testb40").click(function(){
+        $("#testc40").hide();
+      })
+    </script>
+    </div>
+</div>
+
+<script>
+  $("#testc115").hide();
+
+  $("#testa115").click(function(){
+    $("#testc115").show();
+  })
+
+  $("#testb115").click(function(){
+    $("#testc115").hide();
+  })
+</script>
+</div>
+</div>
+
+<li id="testa116" type="button" class="btn border：0">阴囊</li>
+
+<div id="testc116" ;">
+<button id="testb116" type="button" class="btn border：0">Back</button>
+
+  <button id="testa41" type="button" class="btn border：0">睾丸</button>
+
+  <div id="testc41" ;">
+  <ul class="list-unstyled">
+  <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝囊肿&q%5Bnum_cont%5D=&commit=查询">肝囊肿</a></li>
+  <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝多发囊肿&q%5Bnum_cont%5D=&commit=查询">肝多发囊肿</a></li>
+  <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=慢性血吸虫性肝病&q%5Bnum_cont%5D=&commit=查询">慢性血吸虫性肝病</a></li>
+  <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=血吸虫性肝硬化&q%5Bnum_cont%5D=&commit=查询">血吸虫性肝硬化</a></li>
+  <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=脂肪肝&q%5Bnum_cont%5D=&commit=查询">脂肪肝</a></li>
+  <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=脂肪肝倾向&q%5Bnum_cont%5D=&commit=查询">脂肪肝倾向</a></li>
+  <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝内钙化灶&q%5Bnum_cont%5D=&commit=查询">肝内钙化灶</a></li>
+  <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=血管瘤&q%5Bnum_cont%5D=&commit=查询">肝血管瘤</a></li>
+  <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝占位&q%5Bnum_cont%5D=&commit=查询">肝占位</a></li>
+  <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝内胆管胆固醇结晶&q%5Bnum_cont%5D=&commit=查询">肝内胆管胆固醇结晶</a></li>
+  <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=慢性肝病&q%5Bnum_cont%5D=&commit=查询">慢性肝病</a></li>
+  <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝门静脉高压&q%5Bnum_cont%5D=&commit=查询">肝门静脉高压</a></li>
+  </ul>
+  <script>
+    $("#testc41").hide();
+
+    $("#testa41").click(function(){
+      $("#testc41").show();
+    })
+
+    $("#testb41").click(function(){
+      $("#testc41").hide();
+    })
+  </script>
+  </div>
+
+  <div id="testc116" ;">
+
+    <button id="testa42" type="button" class="btn border：0">附睾</button>
+
+    <div id="testc42" ;">
+    <ul class="list-unstyled">
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝囊肿&q%5Bnum_cont%5D=&commit=查询">肝囊肿</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝多发囊肿&q%5Bnum_cont%5D=&commit=查询">肝多发囊肿</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=慢性血吸虫性肝病&q%5Bnum_cont%5D=&commit=查询">慢性血吸虫性肝病</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=血吸虫性肝硬化&q%5Bnum_cont%5D=&commit=查询">血吸虫性肝硬化</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=脂肪肝&q%5Bnum_cont%5D=&commit=查询">脂肪肝</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=脂肪肝倾向&q%5Bnum_cont%5D=&commit=查询">脂肪肝倾向</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝内钙化灶&q%5Bnum_cont%5D=&commit=查询">肝内钙化灶</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=血管瘤&q%5Bnum_cont%5D=&commit=查询">肝血管瘤</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝占位&q%5Bnum_cont%5D=&commit=查询">肝占位</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝内胆管胆固醇结晶&q%5Bnum_cont%5D=&commit=查询">肝内胆管胆固醇结晶</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=慢性肝病&q%5Bnum_cont%5D=&commit=查询">慢性肝病</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝门静脉高压&q%5Bnum_cont%5D=&commit=查询">肝门静脉高压</a></li>
+    </ul>
+    <script>
+      $("#testc42").hide();
+
+      $("#testa42").click(function(){
+        $("#testc42").show();
+      })
+
+      $("#testb42").click(function(){
+        $("#testc42").hide();
+      })
+    </script>
+    </div>
+
+    <div id="testc116" ;">
+
+      <button id="testa43" type="button" class="btn border：0">鞘膜腔</button>
+
+      <div id="testc43" ;">
+      <ul class="list-unstyled">
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝囊肿&q%5Bnum_cont%5D=&commit=查询">肝囊肿</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝多发囊肿&q%5Bnum_cont%5D=&commit=查询">肝多发囊肿</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=慢性血吸虫性肝病&q%5Bnum_cont%5D=&commit=查询">慢性血吸虫性肝病</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=血吸虫性肝硬化&q%5Bnum_cont%5D=&commit=查询">血吸虫性肝硬化</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=脂肪肝&q%5Bnum_cont%5D=&commit=查询">脂肪肝</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=脂肪肝倾向&q%5Bnum_cont%5D=&commit=查询">脂肪肝倾向</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝内钙化灶&q%5Bnum_cont%5D=&commit=查询">肝内钙化灶</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=血管瘤&q%5Bnum_cont%5D=&commit=查询">肝血管瘤</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝占位&q%5Bnum_cont%5D=&commit=查询">肝占位</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝内胆管胆固醇结晶&q%5Bnum_cont%5D=&commit=查询">肝内胆管胆固醇结晶</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=慢性肝病&q%5Bnum_cont%5D=&commit=查询">慢性肝病</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝门静脉高压&q%5Bnum_cont%5D=&commit=查询">肝门静脉高压</a></li>
+      </ul>
+      <script>
+        $("#testc43").hide();
+
+        $("#testa43").click(function(){
+          $("#testc43").show();
+        })
+
+        $("#testb43").click(function(){
+          $("#testc43").hide();
+        })
+      </script>
+      </div>
+
+    <div id="testc116" ;">
+
+      <button id="testa44" type="button" class="btn border：0">精索</button>
+
+      <div id="testc44" ;">
+      <ul class="list-unstyled">
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝囊肿&q%5Bnum_cont%5D=&commit=查询">肝囊肿</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝多发囊肿&q%5Bnum_cont%5D=&commit=查询">肝多发囊肿</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=慢性血吸虫性肝病&q%5Bnum_cont%5D=&commit=查询">慢性血吸虫性肝病</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=血吸虫性肝硬化&q%5Bnum_cont%5D=&commit=查询">血吸虫性肝硬化</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=脂肪肝&q%5Bnum_cont%5D=&commit=查询">脂肪肝</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=脂肪肝倾向&q%5Bnum_cont%5D=&commit=查询">脂肪肝倾向</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝内钙化灶&q%5Bnum_cont%5D=&commit=查询">肝内钙化灶</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=血管瘤&q%5Bnum_cont%5D=&commit=查询">肝血管瘤</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝占位&q%5Bnum_cont%5D=&commit=查询">肝占位</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝内胆管胆固醇结晶&q%5Bnum_cont%5D=&commit=查询">肝内胆管胆固醇结晶</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=慢性肝病&q%5Bnum_cont%5D=&commit=查询">慢性肝病</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝门静脉高压&q%5Bnum_cont%5D=&commit=查询">肝门静脉高压</a></li>
+      </ul>
+      <script>
+        $("#testc44").hide();
+
+        $("#testa44").click(function(){
+          $("#testc44").show();
+        })
+
+        $("#testb44").click(function(){
+          $("#testc44").hide();
+        })
+      </script>
+      </div>
+</div>
+
+    <button id="testa45" type="button" class="btn border：0">阴囊壁</button>
+
+    <div id="testc45" ;">
+    <ul class="list-unstyled">
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝囊肿&q%5Bnum_cont%5D=&commit=查询">肝囊肿</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝多发囊肿&q%5Bnum_cont%5D=&commit=查询">肝多发囊肿</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=慢性血吸虫性肝病&q%5Bnum_cont%5D=&commit=查询">慢性血吸虫性肝病</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=血吸虫性肝硬化&q%5Bnum_cont%5D=&commit=查询">血吸虫性肝硬化</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=脂肪肝&q%5Bnum_cont%5D=&commit=查询">脂肪肝</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=脂肪肝倾向&q%5Bnum_cont%5D=&commit=查询">脂肪肝倾向</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝内钙化灶&q%5Bnum_cont%5D=&commit=查询">肝内钙化灶</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=血管瘤&q%5Bnum_cont%5D=&commit=查询">肝血管瘤</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝占位&q%5Bnum_cont%5D=&commit=查询">肝占位</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝内胆管胆固醇结晶&q%5Bnum_cont%5D=&commit=查询">肝内胆管胆固醇结晶</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=慢性肝病&q%5Bnum_cont%5D=&commit=查询">慢性肝病</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝门静脉高压&q%5Bnum_cont%5D=&commit=查询">肝门静脉高压</a></li>
+    </ul>
+    <script>
+      $("#testc45").hide();
+
+      $("#testa45").click(function(){
+        $("#testc45").show();
+      })
+
+      $("#testb45").click(function(){
+        $("#testc45").hide();
+      })
+    </script>
+    </div>
+</div>
+
+<script>
+  $("#testc116").hide();
+
+  $("#testa116").click(function(){
+    $("#testc116").show();
+  })
+
+  $("#testb116").click(function(){
+    $("#testc116").hide();
+  })
+</script>
+</div>
+</div>
+
+<li id="testa117" type="button" class="btn border：0">甲状腺</li>
+
+<div id="testc117" ;">
+<button id="testb117" type="button" class="btn border：0">Back</button>
+
+  <button id="testa46" type="button" class="btn border：0">弥漫性病变</button>
+
+  <div id="testc46" ;">
+  <ul class="list-unstyled">
+  <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝囊肿&q%5Bnum_cont%5D=&commit=查询">肝囊肿</a></li>
+  <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝多发囊肿&q%5Bnum_cont%5D=&commit=查询">肝多发囊肿</a></li>
+  <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=慢性血吸虫性肝病&q%5Bnum_cont%5D=&commit=查询">慢性血吸虫性肝病</a></li>
+  <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=血吸虫性肝硬化&q%5Bnum_cont%5D=&commit=查询">血吸虫性肝硬化</a></li>
+  <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=脂肪肝&q%5Bnum_cont%5D=&commit=查询">脂肪肝</a></li>
+  <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=脂肪肝倾向&q%5Bnum_cont%5D=&commit=查询">脂肪肝倾向</a></li>
+  <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝内钙化灶&q%5Bnum_cont%5D=&commit=查询">肝内钙化灶</a></li>
+  <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=血管瘤&q%5Bnum_cont%5D=&commit=查询">肝血管瘤</a></li>
+  <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝占位&q%5Bnum_cont%5D=&commit=查询">肝占位</a></li>
+  <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝内胆管胆固醇结晶&q%5Bnum_cont%5D=&commit=查询">肝内胆管胆固醇结晶</a></li>
+  <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=慢性肝病&q%5Bnum_cont%5D=&commit=查询">慢性肝病</a></li>
+  <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝门静脉高压&q%5Bnum_cont%5D=&commit=查询">肝门静脉高压</a></li>
+  </ul>
+  <script>
+    $("#testc46").hide();
+
+    $("#testa46").click(function(){
+      $("#testc46").show();
+    })
+
+    $("#testb46").click(function(){
+      $("#testc46").hide();
+    })
+  </script>
+  </div>
+
+  <div id="testc117" ;">
+
+    <button id="testa47" type="button" class="btn border：0">结节性病变</button>
+
+    <div id="testc47" ;">
+    <ul class="list-unstyled">
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝囊肿&q%5Bnum_cont%5D=&commit=查询">肝囊肿</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝多发囊肿&q%5Bnum_cont%5D=&commit=查询">肝多发囊肿</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=慢性血吸虫性肝病&q%5Bnum_cont%5D=&commit=查询">慢性血吸虫性肝病</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=血吸虫性肝硬化&q%5Bnum_cont%5D=&commit=查询">血吸虫性肝硬化</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=脂肪肝&q%5Bnum_cont%5D=&commit=查询">脂肪肝</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=脂肪肝倾向&q%5Bnum_cont%5D=&commit=查询">脂肪肝倾向</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝内钙化灶&q%5Bnum_cont%5D=&commit=查询">肝内钙化灶</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=血管瘤&q%5Bnum_cont%5D=&commit=查询">肝血管瘤</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝占位&q%5Bnum_cont%5D=&commit=查询">肝占位</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝内胆管胆固醇结晶&q%5Bnum_cont%5D=&commit=查询">肝内胆管胆固醇结晶</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=慢性肝病&q%5Bnum_cont%5D=&commit=查询">慢性肝病</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝门静脉高压&q%5Bnum_cont%5D=&commit=查询">肝门静脉高压</a></li>
+    </ul>
+    <script>
+      $("#testc47").hide();
+
+      $("#testa47").click(function(){
+        $("#testc47").show();
+      })
+
+      $("#testb47").click(function(){
+        $("#testc47").hide();
+      })
+    </script>
+    </div>
+
+    <div id="testc117" ;">
+
+      <button id="testa48" type="button" class="btn border：0">术后改变</button>
+
+      <div id="testc48" ;">
+      <ul class="list-unstyled">
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝囊肿&q%5Bnum_cont%5D=&commit=查询">肝囊肿</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝多发囊肿&q%5Bnum_cont%5D=&commit=查询">肝多发囊肿</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=慢性血吸虫性肝病&q%5Bnum_cont%5D=&commit=查询">慢性血吸虫性肝病</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=血吸虫性肝硬化&q%5Bnum_cont%5D=&commit=查询">血吸虫性肝硬化</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=脂肪肝&q%5Bnum_cont%5D=&commit=查询">脂肪肝</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=脂肪肝倾向&q%5Bnum_cont%5D=&commit=查询">脂肪肝倾向</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝内钙化灶&q%5Bnum_cont%5D=&commit=查询">肝内钙化灶</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=血管瘤&q%5Bnum_cont%5D=&commit=查询">肝血管瘤</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝占位&q%5Bnum_cont%5D=&commit=查询">肝占位</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝内胆管胆固醇结晶&q%5Bnum_cont%5D=&commit=查询">肝内胆管胆固醇结晶</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=慢性肝病&q%5Bnum_cont%5D=&commit=查询">慢性肝病</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝门静脉高压&q%5Bnum_cont%5D=&commit=查询">肝门静脉高压</a></li>
+      </ul>
+      <script>
+        $("#testc48").hide();
+
+        $("#testa48").click(function(){
+          $("#testc48").show();
+        })
+
+        $("#testb48").click(function(){
+          $("#testc48").hide();
+        })
+      </script>
+      </div>
+
+    <div id="testc117" ;">
+
+      <button id="testa49" type="button" class="btn border：0">临近病变</button>
+
+      <div id="testc49" ;">
+      <ul class="list-unstyled">
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝囊肿&q%5Bnum_cont%5D=&commit=查询">肝囊肿</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝多发囊肿&q%5Bnum_cont%5D=&commit=查询">肝多发囊肿</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=慢性血吸虫性肝病&q%5Bnum_cont%5D=&commit=查询">慢性血吸虫性肝病</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=血吸虫性肝硬化&q%5Bnum_cont%5D=&commit=查询">血吸虫性肝硬化</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=脂肪肝&q%5Bnum_cont%5D=&commit=查询">脂肪肝</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=脂肪肝倾向&q%5Bnum_cont%5D=&commit=查询">脂肪肝倾向</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝内钙化灶&q%5Bnum_cont%5D=&commit=查询">肝内钙化灶</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=血管瘤&q%5Bnum_cont%5D=&commit=查询">肝血管瘤</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝占位&q%5Bnum_cont%5D=&commit=查询">肝占位</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝内胆管胆固醇结晶&q%5Bnum_cont%5D=&commit=查询">肝内胆管胆固醇结晶</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=慢性肝病&q%5Bnum_cont%5D=&commit=查询">慢性肝病</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝门静脉高压&q%5Bnum_cont%5D=&commit=查询">肝门静脉高压</a></li>
+      </ul>
+      <script>
+        $("#testc49").hide();
+
+        $("#testa49").click(function(){
+          $("#testc49").show();
+        })
+
+        $("#testb49").click(function(){
+          $("#testc49").hide();
+        })
+      </script>
+      </div>
+</div>
+
+    <button id="testa50" type="button" class="btn border：0">备用</button>
+
+    <div id="testc50" ;">
+    <ul class="list-unstyled">
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝囊肿&q%5Bnum_cont%5D=&commit=查询">肝囊肿</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝多发囊肿&q%5Bnum_cont%5D=&commit=查询">肝多发囊肿</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=慢性血吸虫性肝病&q%5Bnum_cont%5D=&commit=查询">慢性血吸虫性肝病</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=血吸虫性肝硬化&q%5Bnum_cont%5D=&commit=查询">血吸虫性肝硬化</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=脂肪肝&q%5Bnum_cont%5D=&commit=查询">脂肪肝</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=脂肪肝倾向&q%5Bnum_cont%5D=&commit=查询">脂肪肝倾向</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝内钙化灶&q%5Bnum_cont%5D=&commit=查询">肝内钙化灶</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=血管瘤&q%5Bnum_cont%5D=&commit=查询">肝血管瘤</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝占位&q%5Bnum_cont%5D=&commit=查询">肝占位</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝内胆管胆固醇结晶&q%5Bnum_cont%5D=&commit=查询">肝内胆管胆固醇结晶</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=慢性肝病&q%5Bnum_cont%5D=&commit=查询">慢性肝病</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝门静脉高压&q%5Bnum_cont%5D=&commit=查询">肝门静脉高压</a></li>
+    </ul>
+    <script>
+      $("#testc50").hide();
+
+      $("#testa50").click(function(){
+        $("#testc50").show();
+      })
+
+      $("#testb50").click(function(){
+        $("#testc50").hide();
+      })
+    </script>
+    </div>
+</div>
+
+<script>
+  $("#testc117").hide();
+
+  $("#testa117").click(function(){
+    $("#testc117").show();
+  })
+
+  $("#testb117").click(function(){
+    $("#testc117").hide();
+  })
+</script>
+</div>
+</div>
+
+<li id="testa118" type="button" class="btn border：0">乳腺</li>
+
+<div id="testc118" ;">
+<button id="testb118" type="button" class="btn border：0">Back</button>
+
+  <button id="testa51" type="button" class="btn border：0">结节相关</button>
+
+  <div id="testc51" ;">
+  <ul class="list-unstyled">
+  <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝囊肿&q%5Bnum_cont%5D=&commit=查询">肝囊肿</a></li>
+  <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝多发囊肿&q%5Bnum_cont%5D=&commit=查询">肝多发囊肿</a></li>
+  <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=慢性血吸虫性肝病&q%5Bnum_cont%5D=&commit=查询">慢性血吸虫性肝病</a></li>
+  <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=血吸虫性肝硬化&q%5Bnum_cont%5D=&commit=查询">血吸虫性肝硬化</a></li>
+  <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=脂肪肝&q%5Bnum_cont%5D=&commit=查询">脂肪肝</a></li>
+  <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=脂肪肝倾向&q%5Bnum_cont%5D=&commit=查询">脂肪肝倾向</a></li>
+  <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝内钙化灶&q%5Bnum_cont%5D=&commit=查询">肝内钙化灶</a></li>
+  <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=血管瘤&q%5Bnum_cont%5D=&commit=查询">肝血管瘤</a></li>
+  <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝占位&q%5Bnum_cont%5D=&commit=查询">肝占位</a></li>
+  <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝内胆管胆固醇结晶&q%5Bnum_cont%5D=&commit=查询">肝内胆管胆固醇结晶</a></li>
+  <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=慢性肝病&q%5Bnum_cont%5D=&commit=查询">慢性肝病</a></li>
+  <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝门静脉高压&q%5Bnum_cont%5D=&commit=查询">肝门静脉高压</a></li>
+  </ul>
+  <script>
+    $("#testc51").hide();
+
+    $("#testa51").click(function(){
+      $("#testc51").show();
+    })
+
+    $("#testb51").click(function(){
+      $("#testc51").hide();
+    })
+  </script>
+  </div>
+
+  <div id="testc118" ;">
+
+    <button id="testa52" type="button" class="btn border：0">炎症相关</button>
+
+    <div id="testc52" ;">
+    <ul class="list-unstyled">
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝囊肿&q%5Bnum_cont%5D=&commit=查询">肝囊肿</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝多发囊肿&q%5Bnum_cont%5D=&commit=查询">肝多发囊肿</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=慢性血吸虫性肝病&q%5Bnum_cont%5D=&commit=查询">慢性血吸虫性肝病</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=血吸虫性肝硬化&q%5Bnum_cont%5D=&commit=查询">血吸虫性肝硬化</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=脂肪肝&q%5Bnum_cont%5D=&commit=查询">脂肪肝</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=脂肪肝倾向&q%5Bnum_cont%5D=&commit=查询">脂肪肝倾向</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝内钙化灶&q%5Bnum_cont%5D=&commit=查询">肝内钙化灶</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=血管瘤&q%5Bnum_cont%5D=&commit=查询">肝血管瘤</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝占位&q%5Bnum_cont%5D=&commit=查询">肝占位</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝内胆管胆固醇结晶&q%5Bnum_cont%5D=&commit=查询">肝内胆管胆固醇结晶</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=慢性肝病&q%5Bnum_cont%5D=&commit=查询">慢性肝病</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝门静脉高压&q%5Bnum_cont%5D=&commit=查询">肝门静脉高压</a></li>
+    </ul>
+    <script>
+      $("#testc52").hide();
+
+      $("#testa52").click(function(){
+        $("#testc52").show();
+      })
+
+      $("#testb52").click(function(){
+        $("#testc52").hide();
+      })
+    </script>
+    </div>
+
+    <div id="testc118" ;">
+
+      <button id="testa53" type="button" class="btn border：0">其他</button>
+
+      <div id="testc53" ;">
+      <ul class="list-unstyled">
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝囊肿&q%5Bnum_cont%5D=&commit=查询">肝囊肿</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝多发囊肿&q%5Bnum_cont%5D=&commit=查询">肝多发囊肿</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=慢性血吸虫性肝病&q%5Bnum_cont%5D=&commit=查询">慢性血吸虫性肝病</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=血吸虫性肝硬化&q%5Bnum_cont%5D=&commit=查询">血吸虫性肝硬化</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=脂肪肝&q%5Bnum_cont%5D=&commit=查询">脂肪肝</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=脂肪肝倾向&q%5Bnum_cont%5D=&commit=查询">脂肪肝倾向</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝内钙化灶&q%5Bnum_cont%5D=&commit=查询">肝内钙化灶</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=血管瘤&q%5Bnum_cont%5D=&commit=查询">肝血管瘤</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝占位&q%5Bnum_cont%5D=&commit=查询">肝占位</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝内胆管胆固醇结晶&q%5Bnum_cont%5D=&commit=查询">肝内胆管胆固醇结晶</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=慢性肝病&q%5Bnum_cont%5D=&commit=查询">慢性肝病</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝门静脉高压&q%5Bnum_cont%5D=&commit=查询">肝门静脉高压</a></li>
+      </ul>
+      <script>
+        $("#testc53").hide();
+
+        $("#testa53").click(function(){
+          $("#testc53").show();
+        })
+
+        $("#testb53").click(function(){
+          $("#testc53").hide();
+        })
+      </script>
+      </div>
+  </div>
+    <button id="testa54" type="button" class="btn border：0">备用</button>
+
+    <div id="testc54" ;">
+    <ul class="list-unstyled">
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝囊肿&q%5Bnum_cont%5D=&commit=查询">肝囊肿</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝多发囊肿&q%5Bnum_cont%5D=&commit=查询">肝多发囊肿</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=慢性血吸虫性肝病&q%5Bnum_cont%5D=&commit=查询">慢性血吸虫性肝病</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=血吸虫性肝硬化&q%5Bnum_cont%5D=&commit=查询">血吸虫性肝硬化</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=脂肪肝&q%5Bnum_cont%5D=&commit=查询">脂肪肝</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=脂肪肝倾向&q%5Bnum_cont%5D=&commit=查询">脂肪肝倾向</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝内钙化灶&q%5Bnum_cont%5D=&commit=查询">肝内钙化灶</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=血管瘤&q%5Bnum_cont%5D=&commit=查询">肝血管瘤</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝占位&q%5Bnum_cont%5D=&commit=查询">肝占位</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝内胆管胆固醇结晶&q%5Bnum_cont%5D=&commit=查询">肝内胆管胆固醇结晶</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=慢性肝病&q%5Bnum_cont%5D=&commit=查询">慢性肝病</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝门静脉高压&q%5Bnum_cont%5D=&commit=查询">肝门静脉高压</a></li>
+    </ul>
+    <script>
+      $("#testc54").hide();
+
+      $("#testa54").click(function(){
+        $("#testc54").show();
+      })
+
+      $("#testb54").click(function(){
+        $("#testc54").hide();
+      })
+    </script>
+    </div>
+
+<script>
+  $("#testc118").hide();
+
+  $("#testa118").click(function(){
+    $("#testc118").show();
+  })
+
+  $("#testb118").click(function(){
+    $("#testc118").hide();
+  })
+</script>
+</div>
+</div>
+
+<li id="testa119" type="button" class="btn border：0">眼睛</li>
+
+<div id="testc119" ;">
+<button id="testb119" type="button" class="btn border：0">Back</button>
+
+  <button id="testa55" type="button" class="btn border：0">剥离</button>
+
+  <div id="testc55" ;">
+  <ul class="list-unstyled">
+  <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝囊肿&q%5Bnum_cont%5D=&commit=查询">肝囊肿</a></li>
+  <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝多发囊肿&q%5Bnum_cont%5D=&commit=查询">肝多发囊肿</a></li>
+  <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=慢性血吸虫性肝病&q%5Bnum_cont%5D=&commit=查询">慢性血吸虫性肝病</a></li>
+  <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=血吸虫性肝硬化&q%5Bnum_cont%5D=&commit=查询">血吸虫性肝硬化</a></li>
+  <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=脂肪肝&q%5Bnum_cont%5D=&commit=查询">脂肪肝</a></li>
+  <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=脂肪肝倾向&q%5Bnum_cont%5D=&commit=查询">脂肪肝倾向</a></li>
+  <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝内钙化灶&q%5Bnum_cont%5D=&commit=查询">肝内钙化灶</a></li>
+  <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=血管瘤&q%5Bnum_cont%5D=&commit=查询">肝血管瘤</a></li>
+  <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝占位&q%5Bnum_cont%5D=&commit=查询">肝占位</a></li>
+  <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝内胆管胆固醇结晶&q%5Bnum_cont%5D=&commit=查询">肝内胆管胆固醇结晶</a></li>
+  <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=慢性肝病&q%5Bnum_cont%5D=&commit=查询">慢性肝病</a></li>
+  <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝门静脉高压&q%5Bnum_cont%5D=&commit=查询">肝门静脉高压</a></li>
+  </ul>
+  <script>
+    $("#testc55").hide();
+
+    $("#testa55").click(function(){
+      $("#testc55").show();
+    })
+
+    $("#testb55").click(function(){
+      $("#testc55").hide();
+    })
+  </script>
+  </div>
+
+  <div id="testc119" ;">
+
+    <button id="testa56" type="button" class="btn border：0">外伤</button>
+
+    <div id="testc56" ;">
+    <ul class="list-unstyled">
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝囊肿&q%5Bnum_cont%5D=&commit=查询">肝囊肿</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝多发囊肿&q%5Bnum_cont%5D=&commit=查询">肝多发囊肿</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=慢性血吸虫性肝病&q%5Bnum_cont%5D=&commit=查询">慢性血吸虫性肝病</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=血吸虫性肝硬化&q%5Bnum_cont%5D=&commit=查询">血吸虫性肝硬化</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=脂肪肝&q%5Bnum_cont%5D=&commit=查询">脂肪肝</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=脂肪肝倾向&q%5Bnum_cont%5D=&commit=查询">脂肪肝倾向</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝内钙化灶&q%5Bnum_cont%5D=&commit=查询">肝内钙化灶</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=血管瘤&q%5Bnum_cont%5D=&commit=查询">肝血管瘤</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝占位&q%5Bnum_cont%5D=&commit=查询">肝占位</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝内胆管胆固醇结晶&q%5Bnum_cont%5D=&commit=查询">肝内胆管胆固醇结晶</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=慢性肝病&q%5Bnum_cont%5D=&commit=查询">慢性肝病</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝门静脉高压&q%5Bnum_cont%5D=&commit=查询">肝门静脉高压</a></li>
+    </ul>
+    <script>
+      $("#testc56").hide();
+
+      $("#testa56").click(function(){
+        $("#testc56").show();
+      })
+
+      $("#testb56").click(function(){
+        $("#testc56").hide();
+      })
+    </script>
+    </div>
+
+    <div id="testc119" ;">
+
+      <button id="testa57" type="button" class="btn border：0">慢性</button>
+
+      <div id="testc57" ;">
+      <ul class="list-unstyled">
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝囊肿&q%5Bnum_cont%5D=&commit=查询">肝囊肿</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝多发囊肿&q%5Bnum_cont%5D=&commit=查询">肝多发囊肿</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=慢性血吸虫性肝病&q%5Bnum_cont%5D=&commit=查询">慢性血吸虫性肝病</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=血吸虫性肝硬化&q%5Bnum_cont%5D=&commit=查询">血吸虫性肝硬化</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=脂肪肝&q%5Bnum_cont%5D=&commit=查询">脂肪肝</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=脂肪肝倾向&q%5Bnum_cont%5D=&commit=查询">脂肪肝倾向</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝内钙化灶&q%5Bnum_cont%5D=&commit=查询">肝内钙化灶</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=血管瘤&q%5Bnum_cont%5D=&commit=查询">肝血管瘤</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝占位&q%5Bnum_cont%5D=&commit=查询">肝占位</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝内胆管胆固醇结晶&q%5Bnum_cont%5D=&commit=查询">肝内胆管胆固醇结晶</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=慢性肝病&q%5Bnum_cont%5D=&commit=查询">慢性肝病</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝门静脉高压&q%5Bnum_cont%5D=&commit=查询">肝门静脉高压</a></li>
+      </ul>
+      <script>
+        $("#testc57").hide();
+
+        $("#testa57").click(function(){
+          $("#testc57").show();
+        })
+
+        $("#testb57").click(function(){
+          $("#testc57").hide();
+        })
+      </script>
+      </div>
+  </div>
+    <button id="testa58" type="button" class="btn border：0">备用</button>
+
+    <div id="testc58" ;">
+    <ul class="list-unstyled">
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝囊肿&q%5Bnum_cont%5D=&commit=查询">肝囊肿</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝多发囊肿&q%5Bnum_cont%5D=&commit=查询">肝多发囊肿</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=慢性血吸虫性肝病&q%5Bnum_cont%5D=&commit=查询">慢性血吸虫性肝病</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=血吸虫性肝硬化&q%5Bnum_cont%5D=&commit=查询">血吸虫性肝硬化</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=脂肪肝&q%5Bnum_cont%5D=&commit=查询">脂肪肝</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=脂肪肝倾向&q%5Bnum_cont%5D=&commit=查询">脂肪肝倾向</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝内钙化灶&q%5Bnum_cont%5D=&commit=查询">肝内钙化灶</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=血管瘤&q%5Bnum_cont%5D=&commit=查询">肝血管瘤</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝占位&q%5Bnum_cont%5D=&commit=查询">肝占位</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝内胆管胆固醇结晶&q%5Bnum_cont%5D=&commit=查询">肝内胆管胆固醇结晶</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=慢性肝病&q%5Bnum_cont%5D=&commit=查询">慢性肝病</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝门静脉高压&q%5Bnum_cont%5D=&commit=查询">肝门静脉高压</a></li>
+    </ul>
+    <script>
+      $("#testc58").hide();
+
+      $("#testa58").click(function(){
+        $("#testc58").show();
+      })
+
+      $("#testb58").click(function(){
+        $("#testc58").hide();
+      })
+    </script>
+    </div>
+
+<script>
+  $("#testc119").hide();
+
+  $("#testa119").click(function(){
+    $("#testc119").show();
+  })
+
+  $("#testb119").click(function(){
+    $("#testc119").hide();
+  })
+</script>
+</div>
+</div>
+
+<li id="testa120" type="button" class="btn border：0">涎腺</li>
+
+  <div id="testc120" ;">
+  <button id="testb120" type="button" class="btn border：0">Back</button>
+
+    <button id="testa59" type="button" class="btn border：0">炎症</button>
+
+    <div id="testc59" ;">
+    <ul class="list-unstyled">
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝囊肿&q%5Bnum_cont%5D=&commit=查询">肝囊肿</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝多发囊肿&q%5Bnum_cont%5D=&commit=查询">肝多发囊肿</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=慢性血吸虫性肝病&q%5Bnum_cont%5D=&commit=查询">慢性血吸虫性肝病</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=血吸虫性肝硬化&q%5Bnum_cont%5D=&commit=查询">血吸虫性肝硬化</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=脂肪肝&q%5Bnum_cont%5D=&commit=查询">脂肪肝</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=脂肪肝倾向&q%5Bnum_cont%5D=&commit=查询">脂肪肝倾向</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝内钙化灶&q%5Bnum_cont%5D=&commit=查询">肝内钙化灶</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=血管瘤&q%5Bnum_cont%5D=&commit=查询">肝血管瘤</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝占位&q%5Bnum_cont%5D=&commit=查询">肝占位</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝内胆管胆固醇结晶&q%5Bnum_cont%5D=&commit=查询">肝内胆管胆固醇结晶</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=慢性肝病&q%5Bnum_cont%5D=&commit=查询">慢性肝病</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝门静脉高压&q%5Bnum_cont%5D=&commit=查询">肝门静脉高压</a></li>
+    </ul>
+    <script>
+      $("#testc59").hide();
+
+      $("#testa59").click(function(){
+        $("#testc59").show();
+      })
+
+      $("#testb59").click(function(){
+        $("#testc59").hide();
+      })
+    </script>
+    </div>
+
+    <div id="testc120" ;">
+
+      <button id="testa60" type="button" class="btn border：0">占位</button>
+
+      <div id="testc60" ;">
+      <ul class="list-unstyled">
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝囊肿&q%5Bnum_cont%5D=&commit=查询">肝囊肿</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝多发囊肿&q%5Bnum_cont%5D=&commit=查询">肝多发囊肿</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=慢性血吸虫性肝病&q%5Bnum_cont%5D=&commit=查询">慢性血吸虫性肝病</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=血吸虫性肝硬化&q%5Bnum_cont%5D=&commit=查询">血吸虫性肝硬化</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=脂肪肝&q%5Bnum_cont%5D=&commit=查询">脂肪肝</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=脂肪肝倾向&q%5Bnum_cont%5D=&commit=查询">脂肪肝倾向</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝内钙化灶&q%5Bnum_cont%5D=&commit=查询">肝内钙化灶</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=血管瘤&q%5Bnum_cont%5D=&commit=查询">肝血管瘤</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝占位&q%5Bnum_cont%5D=&commit=查询">肝占位</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝内胆管胆固醇结晶&q%5Bnum_cont%5D=&commit=查询">肝内胆管胆固醇结晶</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=慢性肝病&q%5Bnum_cont%5D=&commit=查询">慢性肝病</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝门静脉高压&q%5Bnum_cont%5D=&commit=查询">肝门静脉高压</a></li>
+      </ul>
+      <script>
+        $("#testc60").hide();
+
+        $("#testa60").click(function(){
+          $("#testc60").show();
+        })
+
+        $("#testb60").click(function(){
+          $("#testc60").hide();
+        })
+      </script>
+      </div>
+      </div>
+      <button id="testa61" type="button" class="btn border：0">备用</button>
+
+      <div id="testc61" ;">
+      <ul class="list-unstyled">
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝囊肿&q%5Bnum_cont%5D=&commit=查询">肝囊肿</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝多发囊肿&q%5Bnum_cont%5D=&commit=查询">肝多发囊肿</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=慢性血吸虫性肝病&q%5Bnum_cont%5D=&commit=查询">慢性血吸虫性肝病</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=血吸虫性肝硬化&q%5Bnum_cont%5D=&commit=查询">血吸虫性肝硬化</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=脂肪肝&q%5Bnum_cont%5D=&commit=查询">脂肪肝</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=脂肪肝倾向&q%5Bnum_cont%5D=&commit=查询">脂肪肝倾向</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝内钙化灶&q%5Bnum_cont%5D=&commit=查询">肝内钙化灶</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=血管瘤&q%5Bnum_cont%5D=&commit=查询">肝血管瘤</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝占位&q%5Bnum_cont%5D=&commit=查询">肝占位</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝内胆管胆固醇结晶&q%5Bnum_cont%5D=&commit=查询">肝内胆管胆固醇结晶</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=慢性肝病&q%5Bnum_cont%5D=&commit=查询">慢性肝病</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝门静脉高压&q%5Bnum_cont%5D=&commit=查询">肝门静脉高压</a></li>
+      </ul>
+      <script>
+        $("#testc61").hide();
+
+        $("#testa61").click(function(){
+          $("#testc61").show();
+        })
+
+        $("#testb61").click(function(){
+          $("#testc61").hide();
+        })
+      </script>
+      </div>
+  </div>
+
+  <script>
+    $("#testc120").hide();
+
+    $("#testa120").click(function(){
+      $("#testc120").show();
+    })
+
+    $("#testb120").click(function(){
+      $("#testc120").hide();
+    })
+  </script>
+  </div>
+  </div>
+
+
+</ul>
 
 
 <div class="table-responsive">
@@ -108,15 +2243,329 @@
 </table>
 
 
-
-
 <div class="text-center">
       <%= will_paginate @jobs %>
 </div>
 </div>
 
 
-<div class="pull-left">
-  <%= link_to("新增", new_job_path, :class => "btn border：0") %>
-  <%= sort_link(@q, :title, '排序', default_order: :desc) %>
-</div>
+<ul class="list-inline">
+<li id="testa121" type="button" class="btn border：0">淋巴结</li>
+
+  <div id="testc121" ;">
+  <button id="testb121" type="button" class="btn border：0">Back</button>
+
+    <ul class="list-unstyled">
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝囊肿&q%5Bnum_cont%5D=&commit=查询">肝囊肿</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝多发囊肿&q%5Bnum_cont%5D=&commit=查询">肝多发囊肿</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=慢性血吸虫性肝病&q%5Bnum_cont%5D=&commit=查询">慢性血吸虫性肝病</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=血吸虫性肝硬化&q%5Bnum_cont%5D=&commit=查询">血吸虫性肝硬化</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=脂肪肝&q%5Bnum_cont%5D=&commit=查询">脂肪肝</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=脂肪肝倾向&q%5Bnum_cont%5D=&commit=查询">脂肪肝倾向</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝内钙化灶&q%5Bnum_cont%5D=&commit=查询">肝内钙化灶</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=血管瘤&q%5Bnum_cont%5D=&commit=查询">肝血管瘤</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝占位&q%5Bnum_cont%5D=&commit=查询">肝占位</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝内胆管胆固醇结晶&q%5Bnum_cont%5D=&commit=查询">肝内胆管胆固醇结晶</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=慢性肝病&q%5Bnum_cont%5D=&commit=查询">慢性肝病</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝门静脉高压&q%5Bnum_cont%5D=&commit=查询">肝门静脉高压</a></li>
+    </ul>
+
+  <script>
+    $("#testc121").hide();
+
+    $("#testa121").click(function(){
+      $("#testc121").show();
+    })
+
+    $("#testb121").click(function(){
+      $("#testc121").hide();
+    })
+  </script>
+  </div>
+  </div>
+
+<li id="testa122" type="button" class="btn border：0">胸腔</li>
+
+  <div id="testc122" ;">
+  <button id="testb122" type="button" class="btn border：0">Back</button>
+
+    <ul class="list-unstyled">
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝囊肿&q%5Bnum_cont%5D=&commit=查询">肝囊肿</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝多发囊肿&q%5Bnum_cont%5D=&commit=查询">肝多发囊肿</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=慢性血吸虫性肝病&q%5Bnum_cont%5D=&commit=查询">慢性血吸虫性肝病</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=血吸虫性肝硬化&q%5Bnum_cont%5D=&commit=查询">血吸虫性肝硬化</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=脂肪肝&q%5Bnum_cont%5D=&commit=查询">脂肪肝</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=脂肪肝倾向&q%5Bnum_cont%5D=&commit=查询">脂肪肝倾向</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝内钙化灶&q%5Bnum_cont%5D=&commit=查询">肝内钙化灶</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=血管瘤&q%5Bnum_cont%5D=&commit=查询">肝血管瘤</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝占位&q%5Bnum_cont%5D=&commit=查询">肝占位</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝内胆管胆固醇结晶&q%5Bnum_cont%5D=&commit=查询">肝内胆管胆固醇结晶</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=慢性肝病&q%5Bnum_cont%5D=&commit=查询">慢性肝病</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝门静脉高压&q%5Bnum_cont%5D=&commit=查询">肝门静脉高压</a></li>
+    </ul>
+
+  <script>
+    $("#testc122").hide();
+
+    $("#testa122").click(function(){
+      $("#testc122").show();
+    })
+
+    $("#testb122").click(function(){
+      $("#testc122").hide();
+    })
+  </script>
+  </div>
+  </div>
+
+<li id="testa123" type="button" class="btn border：0">体表</li>
+
+  <div id="testc123" ;">
+  <button id="testb123" type="button" class="btn border：0">Back</button>
+
+    <ul class="list-unstyled">
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝囊肿&q%5Bnum_cont%5D=&commit=查询">肝囊肿</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝多发囊肿&q%5Bnum_cont%5D=&commit=查询">肝多发囊肿</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=慢性血吸虫性肝病&q%5Bnum_cont%5D=&commit=查询">慢性血吸虫性肝病</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=血吸虫性肝硬化&q%5Bnum_cont%5D=&commit=查询">血吸虫性肝硬化</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=脂肪肝&q%5Bnum_cont%5D=&commit=查询">脂肪肝</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=脂肪肝倾向&q%5Bnum_cont%5D=&commit=查询">脂肪肝倾向</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝内钙化灶&q%5Bnum_cont%5D=&commit=查询">肝内钙化灶</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=血管瘤&q%5Bnum_cont%5D=&commit=查询">肝血管瘤</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝占位&q%5Bnum_cont%5D=&commit=查询">肝占位</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝内胆管胆固醇结晶&q%5Bnum_cont%5D=&commit=查询">肝内胆管胆固醇结晶</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=慢性肝病&q%5Bnum_cont%5D=&commit=查询">慢性肝病</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝门静脉高压&q%5Bnum_cont%5D=&commit=查询">肝门静脉高压</a></li>
+    </ul>
+
+  <script>
+    $("#testc123").hide();
+
+    $("#testa123").click(function(){
+      $("#testc123").show();
+    })
+
+    $("#testb123").click(function(){
+      $("#testc123").hide();
+    })
+  </script>
+  </div>
+  </div>
+
+<li id="testa124" type="button" class="btn border：0">肌骨</li>
+
+  <div id="testc124" ;">
+  <button id="testb124" type="button" class="btn border：0">Back</button>
+
+    <button id="testa62" type="button" class="btn border：0">肩袖撕裂</button>
+
+    <div id="testc62" ;">
+    <ul class="list-unstyled">
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝囊肿&q%5Bnum_cont%5D=&commit=查询">肝囊肿</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝多发囊肿&q%5Bnum_cont%5D=&commit=查询">肝多发囊肿</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=慢性血吸虫性肝病&q%5Bnum_cont%5D=&commit=查询">慢性血吸虫性肝病</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=血吸虫性肝硬化&q%5Bnum_cont%5D=&commit=查询">血吸虫性肝硬化</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=脂肪肝&q%5Bnum_cont%5D=&commit=查询">脂肪肝</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=脂肪肝倾向&q%5Bnum_cont%5D=&commit=查询">脂肪肝倾向</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝内钙化灶&q%5Bnum_cont%5D=&commit=查询">肝内钙化灶</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=血管瘤&q%5Bnum_cont%5D=&commit=查询">肝血管瘤</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝占位&q%5Bnum_cont%5D=&commit=查询">肝占位</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝内胆管胆固醇结晶&q%5Bnum_cont%5D=&commit=查询">肝内胆管胆固醇结晶</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=慢性肝病&q%5Bnum_cont%5D=&commit=查询">慢性肝病</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝门静脉高压&q%5Bnum_cont%5D=&commit=查询">肝门静脉高压</a></li>
+    </ul>
+    <script>
+      $("#testc62").hide();
+
+      $("#testa62").click(function(){
+        $("#testc62").show();
+      })
+
+      $("#testb62").click(function(){
+        $("#testc62").hide();
+      })
+    </script>
+    </div>
+
+    <div id="testc124" ;">
+
+      <button id="testa63" type="button" class="btn border：0">肌腱及腱鞘炎</button>
+
+      <div id="testc63" ;">
+      <ul class="list-unstyled">
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝囊肿&q%5Bnum_cont%5D=&commit=查询">肝囊肿</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝多发囊肿&q%5Bnum_cont%5D=&commit=查询">肝多发囊肿</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=慢性血吸虫性肝病&q%5Bnum_cont%5D=&commit=查询">慢性血吸虫性肝病</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=血吸虫性肝硬化&q%5Bnum_cont%5D=&commit=查询">血吸虫性肝硬化</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=脂肪肝&q%5Bnum_cont%5D=&commit=查询">脂肪肝</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=脂肪肝倾向&q%5Bnum_cont%5D=&commit=查询">脂肪肝倾向</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝内钙化灶&q%5Bnum_cont%5D=&commit=查询">肝内钙化灶</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=血管瘤&q%5Bnum_cont%5D=&commit=查询">肝血管瘤</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝占位&q%5Bnum_cont%5D=&commit=查询">肝占位</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝内胆管胆固醇结晶&q%5Bnum_cont%5D=&commit=查询">肝内胆管胆固醇结晶</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=慢性肝病&q%5Bnum_cont%5D=&commit=查询">慢性肝病</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝门静脉高压&q%5Bnum_cont%5D=&commit=查询">肝门静脉高压</a></li>
+      </ul>
+      <script>
+        $("#testc63").hide();
+
+        $("#testa63").click(function(){
+          $("#testc63").show();
+        })
+
+        $("#testb63").click(function(){
+          $("#testc63").hide();
+        })
+      </script>
+      </div>
+
+      <div id="testc124" ;">
+
+        <button id="testa64" type="button" class="btn border：0">神经卡压综合征</button>
+
+        <div id="testc64" ;">
+        <ul class="list-unstyled">
+        <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝囊肿&q%5Bnum_cont%5D=&commit=查询">肝囊肿</a></li>
+        <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝多发囊肿&q%5Bnum_cont%5D=&commit=查询">肝多发囊肿</a></li>
+        <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=慢性血吸虫性肝病&q%5Bnum_cont%5D=&commit=查询">慢性血吸虫性肝病</a></li>
+        <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=血吸虫性肝硬化&q%5Bnum_cont%5D=&commit=查询">血吸虫性肝硬化</a></li>
+        <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=脂肪肝&q%5Bnum_cont%5D=&commit=查询">脂肪肝</a></li>
+        <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=脂肪肝倾向&q%5Bnum_cont%5D=&commit=查询">脂肪肝倾向</a></li>
+        <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝内钙化灶&q%5Bnum_cont%5D=&commit=查询">肝内钙化灶</a></li>
+        <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=血管瘤&q%5Bnum_cont%5D=&commit=查询">肝血管瘤</a></li>
+        <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝占位&q%5Bnum_cont%5D=&commit=查询">肝占位</a></li>
+        <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝内胆管胆固醇结晶&q%5Bnum_cont%5D=&commit=查询">肝内胆管胆固醇结晶</a></li>
+        <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=慢性肝病&q%5Bnum_cont%5D=&commit=查询">慢性肝病</a></li>
+        <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝门静脉高压&q%5Bnum_cont%5D=&commit=查询">肝门静脉高压</a></li>
+        </ul>
+        <script>
+          $("#testc64").hide();
+
+          $("#testa64").click(function(){
+            $("#testc64").show();
+          })
+
+          $("#testb64").click(function(){
+            $("#testc64").hide();
+          })
+        </script>
+        </div>
+    </div>
+      <button id="testa65" type="button" class="btn border：0">小儿髋关节脱位</button>
+
+      <div id="testc65" ;">
+      <ul class="list-unstyled">
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝囊肿&q%5Bnum_cont%5D=&commit=查询">肝囊肿</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝多发囊肿&q%5Bnum_cont%5D=&commit=查询">肝多发囊肿</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=慢性血吸虫性肝病&q%5Bnum_cont%5D=&commit=查询">慢性血吸虫性肝病</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=血吸虫性肝硬化&q%5Bnum_cont%5D=&commit=查询">血吸虫性肝硬化</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=脂肪肝&q%5Bnum_cont%5D=&commit=查询">脂肪肝</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=脂肪肝倾向&q%5Bnum_cont%5D=&commit=查询">脂肪肝倾向</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝内钙化灶&q%5Bnum_cont%5D=&commit=查询">肝内钙化灶</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=血管瘤&q%5Bnum_cont%5D=&commit=查询">肝血管瘤</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝占位&q%5Bnum_cont%5D=&commit=查询">肝占位</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝内胆管胆固醇结晶&q%5Bnum_cont%5D=&commit=查询">肝内胆管胆固醇结晶</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=慢性肝病&q%5Bnum_cont%5D=&commit=查询">慢性肝病</a></li>
+      <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝门静脉高压&q%5Bnum_cont%5D=&commit=查询">肝门静脉高压</a></li>
+      </ul>
+      <script>
+        $("#testc65").hide();
+
+        $("#testa65").click(function(){
+          $("#testc65").show();
+        })
+
+        $("#testb65").click(function(){
+          $("#testc65").hide();
+        })
+      </script>
+      </div>
+  </div>
+
+  <script>
+    $("#testc124").hide();
+
+    $("#testa124").click(function(){
+      $("#testc124").show();
+    })
+
+    $("#testb124").click(function(){
+      $("#testc124").hide();
+    })
+  </script>
+  </div>
+  </div>
+
+  <li id="testa125" type="button" class="btn border：0">介入&造影</li>
+
+  <div id="testc125" ;">
+  <button id="testb125" type="button" class="btn border：0">Back</button>
+
+    <ul class="list-unstyled">
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝囊肿&q%5Bnum_cont%5D=&commit=查询">肝囊肿</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝多发囊肿&q%5Bnum_cont%5D=&commit=查询">肝多发囊肿</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=慢性血吸虫性肝病&q%5Bnum_cont%5D=&commit=查询">慢性血吸虫性肝病</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=血吸虫性肝硬化&q%5Bnum_cont%5D=&commit=查询">血吸虫性肝硬化</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=脂肪肝&q%5Bnum_cont%5D=&commit=查询">脂肪肝</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=脂肪肝倾向&q%5Bnum_cont%5D=&commit=查询">脂肪肝倾向</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝内钙化灶&q%5Bnum_cont%5D=&commit=查询">肝内钙化灶</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=血管瘤&q%5Bnum_cont%5D=&commit=查询">肝血管瘤</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝占位&q%5Bnum_cont%5D=&commit=查询">肝占位</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝内胆管胆固醇结晶&q%5Bnum_cont%5D=&commit=查询">肝内胆管胆固醇结晶</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=慢性肝病&q%5Bnum_cont%5D=&commit=查询">慢性肝病</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝门静脉高压&q%5Bnum_cont%5D=&commit=查询">肝门静脉高压</a></li>
+    </ul>
+
+  <script>
+    $("#testc125").hide();
+
+    $("#testa125").click(function(){
+      $("#testc125").show();
+    })
+
+    $("#testb125").click(function(){
+      $("#testc125").hide();
+    })
+  </script>
+  </div>
+  </div>
+
+  <li id="testa126" type="button" class="btn border：0">床边</li>
+
+  <div id="testc126" ;">
+  <button id="testb126" type="button" class="btn border：0">Back</button>
+
+    <ul class="list-unstyled">
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝囊肿&q%5Bnum_cont%5D=&commit=查询">肝囊肿</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝多发囊肿&q%5Bnum_cont%5D=&commit=查询">肝多发囊肿</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=慢性血吸虫性肝病&q%5Bnum_cont%5D=&commit=查询">慢性血吸虫性肝病</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=血吸虫性肝硬化&q%5Bnum_cont%5D=&commit=查询">血吸虫性肝硬化</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=脂肪肝&q%5Bnum_cont%5D=&commit=查询">脂肪肝</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=脂肪肝倾向&q%5Bnum_cont%5D=&commit=查询">脂肪肝倾向</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝内钙化灶&q%5Bnum_cont%5D=&commit=查询">肝内钙化灶</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=血管瘤&q%5Bnum_cont%5D=&commit=查询">肝血管瘤</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝占位&q%5Bnum_cont%5D=&commit=查询">肝占位</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝内胆管胆固醇结晶&q%5Bnum_cont%5D=&commit=查询">肝内胆管胆固醇结晶</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=慢性肝病&q%5Bnum_cont%5D=&commit=查询">慢性肝病</a></li>
+    <li> <a href="/jobs?utf8=✓&q%5Btitle_cont%5D=肝门静脉高压&q%5Bnum_cont%5D=&commit=查询">肝门静脉高压</a></li>
+    </ul>
+
+  <script>
+    $("#testc126").hide();
+
+    $("#testa126").click(function(){
+      $("#testc126").show();
+    })
+
+    $("#testb126").click(function(){
+      $("#testc126").hide();
+    })
+  </script>
+  </div>
+  </div>
+
+
+  <li type="button" class="btn border：0"><%= link_to("新增", new_job_path) %></li>
+
+  <li type="button" class="btn border：0"><%= sort_link(@q, :title, '排序', default_order: :desc) %></li>
+</ul>
