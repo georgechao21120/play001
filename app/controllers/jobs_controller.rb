@@ -62,6 +62,7 @@ class JobsController < ApplicationController
 
 
 
+
   private
 
   def job_params

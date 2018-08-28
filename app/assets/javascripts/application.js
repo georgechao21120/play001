@@ -17,3 +17,4 @@
 //= require bootstrap/dropdown
 //= require_tree .
 //= require bootstrap/modal
+//= require select2
