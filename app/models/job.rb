@@ -49,19 +49,6 @@ end
     scope :published, -> { where(is_hidden: false) }
     scope :recent, -> { order('created_at DESC') }
 
-    DESCRIPTION = ["测试测试", "confirmed", "cancalled"]
-    validates_inclusion_of :description, :in => DESCRIPTION
-    POS = ["甲状腺"]
-    validates_inclusion_of :description, :in => POS
-    COMP = ["囊性或几乎完全囊性", "海绵样", "囊实混合性", "实性或几乎完全实性"]
-    validates_inclusion_of :description, :in => COMP
-    ECHO = ["无回声", "高回声或等回声", "低回声", "极低回声"]
-    validates_inclusion_of :description, :in => ECHO
-    FORM = ["横径大于纵径", "纵径大于横径"]
-    validates_inclusion_of :description, :in => FORM
-    EDGE = ["光滑", "模糊", "分叶或不规则", "向甲状腺外延伸"]
-    validates_inclusion_of :description, :in => EDGE
-    CALC = ["无强回声或大彗尾", "粗钙化", "周围型钙化", "点状强回声"]
-    validates_inclusion_of :description, :in => CALC
+
 
 end

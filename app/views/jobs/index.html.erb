@@ -104,43 +104,7 @@
 </script>
 
 
-<li id="my-open-click11" type="button" class="btn border：0">TR分级</li>
 
-<div id="foo11" ;">
-
-  <%= search_form_for @q do |f| %>
-      <%= f.search_field :description_cont, :placeholder => "模板", :class => "form-control" %></p>
-      <%= f.select :pos_cont, Job::POS, {include_blank: "部位"}, class: "js-example-basic-multiple" %>
-      <%= f.select :comp_cont, Job::COMP, {include_blank: "成分"}, class: "js-example-basic-multiple" %>
-      <%= f.select :echo_cont, Job::ECHO, {include_blank: "回声"}, class: "js-example-basic-multiple" %>
-      <%= f.select :form_cont, Job::FORM, {include_blank: "形态"}, class: "js-example-basic-multiple" %>
-      <%= f.select :edge_cont, Job::EDGE, {include_blank: "边缘"}, class: "js-example-basic-multiple" %>
-      <%= f.select :calc_cont, Job::CALC, {include_blank: "钙化"}, class: "js-example-basic-multiple" %>
-      <script type="text/javascript">
-          //页面加载完成后初始化select2控件
-          $(function () {
-              $(".js-example-basic-multiple").select2();
-          });
-      </script>
-
-      <p class="text-left">
-           <%= submit_tag "思考", :class => "btn btn-info" %>
-           <% end %>
-      </p>
-</div>
-
-
-<script>
-  $("#foo11").hide();
-
-  $("#my-open-click11").click(function(){
-    $("#foo11").toggle();
-  })
-
-  $("#my-hide-click11").click(function(){
-    $("#foo11").hide();
-  })
-</script>
 </ul>
 
 
