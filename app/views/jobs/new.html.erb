@@ -29,9 +29,7 @@
 <%= f.input :opare, :label => "机器" %>
 <%= f.input :seltrdes, :label => "描述选择" %>
 <%= f.input :catamenta, :label => "月经史" %>
-<%= f.label "外形" %>
-      <!-- 用户.单选框 -->
-<%= select_tag :apple, options_for_select(Job.all.collect{|job| [job.apple, job.id]}), class: "form-control"%>
+<%= f.input :apple, :label => "外形" %>
 <%= f.input :read, :label => "文字" %>
 <%= f.input :is_hidden, :label => "待审核" %>
 

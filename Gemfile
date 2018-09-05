@@ -1,4 +1,4 @@
-source 'https://rubygems.org'
+source 'https://gems.ruby-china.com'
 
 git_source(:github) do |repo_name|
   repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
@@ -61,7 +61,6 @@ gem 'axlsx_rails'
 gem 'utf8-cleaner'
 gem 'roo'
 gem "iconv", "~> 1.0.3"
-gem 'jquery-rails'
 gem 'select2-rails'
 
 group :development do

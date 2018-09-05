@@ -49,17 +49,17 @@ end
     scope :published, -> { where(is_hidden: false) }
     scope :recent, -> { order('created_at DESC') }
 
-    SELTRPOS = ["甲状腺"]
+    SELTRPOS = ["甲状腺", ""]
     validates_inclusion_of :seltrpos, :in => SELTRPOS
-    SELTRCOMP = ["囊性或几乎完全囊性", "海绵样", "囊实混合性", "实性或几乎完全实性"]
+    SELTRCOMP = ["囊性或几乎完全囊性", "海绵样", "囊实混合性", "实性或几乎完全实性", ""]
     validates_inclusion_of :seltrcomp, :in => SELTRCOMP
-    SELTRECHO = ["无回声", "高回声或等回声", "低回声", "极低回声"]
+    SELTRECHO = ["无回声", "高回声或等回声", "低回声", "极低回声", ""]
     validates_inclusion_of :seltrecho, :in => SELTRECHO
-    APPLE = ["横径大于纵径", "纵径大于横径"]
+    APPLE = ["横径大于纵径", "纵径大于横径", " "]
     validates_inclusion_of :apple, :in => APPLE
-    SELTREDGE = ["光滑", "模糊", "分叶或不规则", "向甲状腺外延伸"]
+    SELTREDGE = ["光滑", "模糊", "分叶或不规则", "向甲状腺外延伸", ""]
     validates_inclusion_of :seltredge, :in => SELTREDGE
-    SELTRCALC = ["无强回声或大彗尾", "粗钙化", "周围型钙化", "点状强回声"]
+    SELTRCALC = ["无强回声或大彗尾", "粗钙化", "周围型钙化", "点状强回声", ""]
     validates_inclusion_of :seltrcalc, :in => SELTRCALC
 
 end
