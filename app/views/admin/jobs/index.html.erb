@@ -61,8 +61,7 @@
 
  <hr>
 
- <h2>Import D</h2>
- <%= form_tag import_admin_jobs_path, multipart: true do %>
-   <%= file_field_tag :file %>
-   <%= submit_tag "Import" %>
+ <%= form_tag import_admin_jobs_path(@job), :multipart => true do %>
+   <p><%= file_field_tag "csv_file" %></p>
+   <p><%= submit_tag "汇入CSV", :class => "btn btn-danger" %></p>
  <% end %>

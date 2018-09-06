@@ -81,10 +81,34 @@ class Admin::JobsController < ApplicationController
     end
 
 
-    def import
-        Job.import(params[:file])
-        redirect_to root_url, notice: "JOBs imported."
+      def import
+    csv_string = params[:csv_file].read.force_encoding('utf-8')
+
+    jobs = @job.jobs
+
+    success = 0
+    failed_records = []
+
+    CSV.parse(csv_string) do |row|
+      job = @job.jobs.new(   :title => row[0] ,
+                                   :num => row[1],
+                                   :description => row[2],
+                                   :pos => row[3],
+                                   :aut => row[4],
+                                   :size => row[5])
+
+      if job.save
+        success += 1
+      else
+        failed_records << [row, job]
+        Rails.logger.info("#{row} ----> #{job.errors.full_messages}")
       end
+    end
+
+    flash[:notice] = "总共汇入 #{success} 笔，失败 #{failed_records.size} 笔"
+    redirect_to admin_jobs_path(@job)
+  end
+
 
 
   private

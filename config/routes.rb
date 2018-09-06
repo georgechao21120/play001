@@ -3,8 +3,11 @@ Rails.application.routes.draw do
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   namespace :admin do
       resources :jobs, :controller => "jobs" do
-      collection { post :import }
+      collection do
+        post :import
+      end
       member do
+
         post :publish
         post :hide
       end
