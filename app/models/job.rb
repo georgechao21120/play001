@@ -1,5 +1,5 @@
 class Job < ApplicationRecord
-    validates :title, presence: true
+    
     before_validation :generate_friendly_id, :on => :create
     mount_uploader :image, ImageUploader
     mount_uploaders :images, JobImageUploader
