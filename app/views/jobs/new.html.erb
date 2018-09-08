@@ -2,14 +2,6 @@
 
 <%= simple_form_for @job do |f| %>
 <%= f.input :title, :label => "名称" %>
-<%= f.input :num, :label => "正常值" %>
-<%= f.input :description, :label => "模板" %>
-<%= f.input :seltrpos, :label => "部位" %>
-<%= f.input :seltrcomp, :label => "成分" %>
-<%= f.input :seltrecho, :label => "回声" %>
-<%= f.input :apple, :label => "形态" %>
-<%= f.input :seltredge, :label => "边缘" %>
-<%= f.input :seltrcalc, :label => "钙化" %>
 
   <%= f.submit "上传" %>
 <% end %>
