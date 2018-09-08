@@ -19,6 +19,9 @@
             <td>
                 管理选项
             </td>
+            <td>
+                上传时间
+            </td>
         </tr>
     </thead>
 
@@ -40,6 +43,9 @@
         <% else %>
             <%= link_to("Hide", hide_admin_job_path(job), :method => :post,  :class => "btn btn-xs btn-warning") %>
             <% end %>
+        </td>
+        <td>
+            <%= job.created_at %>
         </td>
     </tr>
     <% end %>
