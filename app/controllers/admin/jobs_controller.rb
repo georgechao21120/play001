@@ -18,7 +18,7 @@ class Admin::JobsController < ApplicationController
               format.csv {
                 @jobs = @jobs.reorder("id ASC")
                 csv_string = CSV.generate do |csv|
-                  csv << ["名称", "模板", "正常值", "部位", "切面", "大小", "回声", "成分", "形态", "边缘", "钙化", "血流", "频谱", "弹性（质地）", "症状", "体征", "生化", "病理", "病因", "治疗", "造影", "整理者&联系方式", "参考文献"]
+               find_by_friendly_id!sv << ["名称", "模板", "正常值", "部位", "切面", "大小", "回声", "成分", "形态", "边缘", "钙化", "血流", "频谱", "弹性（质地）", "症状", "体征", "生化", "病理", "病因", "治疗", "造影", "整理者&联系方式", "参考文献"]
                   @jobs.each do |r|
                     csv << [r.title, r.description,r.num, r.pos, r.aut, r.size, r.echo, r.comp, r.form, r.edge, r.calc, r.color, r.spec, r.elas, r.symp, r.sign, r.bio, r.path, r.hct, r.treat, r.spare, r.person, r.paper]
                   end
