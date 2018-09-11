@@ -106,13 +106,13 @@
 <div id="foo11" ;">
 
   <%= search_form_for @q do |f| %>
-      <p><%= f.search_field :description_cont, :placeholder => "模板", :class => "form-control" %></p>
-      <p><%= f.select :seltrpos_cont, Job::SELTRPOS, {include_blank: "部位"}, class: "js-example-basic-multiple" %></p>
-      <p><%= f.select :seltrcomp_cont, Job::SELTRCOMP, {include_blank: "成分"}, class: "js-example-basic-multiple" %></p>
-      <p><%= f.select :seltrecho_cont, Job::SELTRECHO, {include_blank: "回声"}, class: "js-example-basic-multiple" %></p>
-      <p><%= f.select :apple_cont, Job::APPLE, {include_blank: "形态"}, class: "js-example-basic-multiple" %></p>
-      <p><%= f.select :seltredge_cont, Job::SELTREDGE, {include_blank: "边缘"}, class: "js-example-basic-multiple" %></p>
-      <p><%= f.select :seltrcalc_cont, Job::SELTRCALC, {include_blank: "钙化"}, class: "js-example-basic-multiple" %></p>
+      <%= f.search_field :description_cont, :placeholder => "模板", :class => "form-control" %>
+      <%= f.select :seltrpos_cont, Job::SELTRPOS, {include_blank: "部位"}, class: "js-example-basic-multiple" %>
+      <%= f.select :seltrcomp_cont, Job::SELTRCOMP, {include_blank: "成分"}, class: "js-example-basic-multiple" %>
+      <%= f.select :seltrecho_cont, Job::SELTRECHO, {include_blank: "回声"}, class: "js-example-basic-multiple" %>
+      <%= f.select :apple_cont, Job::APPLE, {include_blank: "形态"}, class: "js-example-basic-multiple" %>
+      <%= f.select :seltredge_cont, Job::SELTREDGE, {include_blank: "边缘"}, class: "js-example-basic-multiple" %>
+      <%= f.select :seltrcalc_cont, Job::SELTRCALC, {include_blank: "钙化"}, class: "js-example-basic-multiple" %>
       <script type="text/javascript">
           //页面加载完成后初始化select2控件
           $(function () {
