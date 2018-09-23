@@ -101,6 +101,7 @@
 </script>
 
 
+
 <li id="my-open-click11" type="button" class="btn border：0">TR分级</li>
 
 <div id="foo11" ;">
@@ -175,6 +176,83 @@
 
   $("#my-hide-click11").click(function(){
     $("#foo11").hide();
+  })
+</script>
+
+
+<li id="my-open-click112" type="button" class="btn border：0">髋关节</li>
+
+<div id="foo112" ;">
+
+  <%= search_form_for @q do |f| %>
+      <%= f.search_field :description_cont, :placeholder => "模板", :class => "form-control" %>
+      <%= f.select :seltrpos_cont, Job::SELTRPOS, {include_blank: "部位"}, class: "js-example-basic-multiple" %>
+      <%= f.select :aaa_cont, Job::AAA, {include_blank: "α角"}, class: "js-example-basic-multiple" %>
+      <%= f.select :bbb_cont, Job::BBB, {include_blank: "β角"}, class: "js-example-basic-multiple" %>
+      <%= f.select :cartilage_cont, Job::CARTILAGE, {include_blank: "软骨位置"}, class: "js-example-basic-multiple" %>
+      <%= f.select :age_cont, Job::AGE, {include_blank: "年龄"}, class: "js-example-basic-multiple" %>
+
+      <button id="testa143442" type="button" class="btn border：0">示例图片</button>
+
+      <div id="testc143442" ;">
+      <ul class="list-unstyled">
+      <li>举例<img src="http://p9sqbcnde.bkt.clouddn.com/jiejie0432.jpeg" width="100" height="100"></li>
+      </ul>
+      <script>
+        $("#testc143442").hide();
+
+        $("#testa143442").click(function(){
+          $("#testc143442").toggle();
+        })
+
+        $("#testb143442").click(function(){
+          $("#testc143442").hide();
+        })
+      </script>
+      </div>
+
+      <button id="testa1434412" type="button" class="btn border：0">解剖操作</button>
+
+      <div id="testc1434412" ;">
+      <ul class="list-unstyled">
+      <li> <img src="http://p9sqbcnde.bkt.clouddn.com/jiejie0432.jpeg" width="100" height="100"></li>
+      </ul>
+      <script>
+        $("#testc1434412").hide();
+
+        $("#testa1434412").click(function(){
+          $("#testc1434412").toggle();
+        })
+
+        $("#testb1434412").click(function(){
+          $("#testc1434412").hide();
+        })
+      </script>
+      </div>
+
+      <script type="text/javascript">
+          //页面加载完成后初始化select2控件
+          $(function () {
+              $(".js-example-basic-multiple").select2();
+          });
+      </script>
+
+      <p class="text-left">
+           <%= submit_tag "思考", :class => "btn btn-info" %>
+           <% end %>
+      </p>
+</div>
+
+
+<script>
+  $("#foo112").hide();
+
+  $("#my-open-click112").click(function(){
+    $("#foo112").toggle();
+  })
+
+  $("#my-hide-click112").click(function(){
+    $("#foo112").hide();
   })
 </script>
 

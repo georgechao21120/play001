@@ -48,7 +48,7 @@ end
 
     scope :published, -> { where(is_hidden: false) }
     scope :recent, -> { order('created_at DESC') }
-
+#甲状腺分级部分
         SELTRPOS = ["甲状腺", "髋关节"]
         validates_inclusion_of :seltrpos, :in => SELTRPOS
         SELTRCOMP = ["囊性或几乎完全囊性", "海绵样", "囊实混合性", "实性或几乎完全实性", ""]
@@ -61,6 +61,13 @@ end
         validates_inclusion_of :seltredge, :in => SELTREDGE
         SELTRCALC = ["无强回声或大彗尾", "粗钙化", "周围型钙化", "点状强回声", ""]
         validates_inclusion_of :seltrcalc, :in => SELTRCALC
-
-
+#髋关节部分
+        AAA = ["α≥60°", "α（50-59°）", "α（43-49°）", "α＜43°", ""]
+        validates_inclusion_of :aaa, :in => AAA
+        BBB = ["β＜55°", "β＜77°", "无", ""]
+        validates_inclusion_of :bbb, :in => BBB
+        CARTILAGE = ["软骨顶覆盖股骨头", "软骨顶被挤压移位", "软骨顶被推向上方，内部结构未发生变性", "软骨顶被推向上方，内部结构发生变性", "软骨顶被推向下方"]
+        validates_inclusion_of :cartilage, :in => CARTILAGE
+        AGE = ["任何年龄", "0-12周", "6-12周", "＞12周", ""]
+        validates_inclusion_of :age, :in => AGE
 end
