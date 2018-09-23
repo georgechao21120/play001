@@ -109,10 +109,49 @@
       <%= f.search_field :description_cont, :placeholder => "模板", :class => "form-control" %>
       <%= f.select :seltrpos_cont, Job::SELTRPOS, {include_blank: "部位"}, class: "js-example-basic-multiple" %>
       <%= f.select :seltrcomp_cont, Job::SELTRCOMP, {include_blank: "成分"}, class: "js-example-basic-multiple" %>
-      <%= f.select :seltrecho_cont, Job::SELTRECHO, {include_blank: "回声"}, class: "js-example-basic-multiple" %>
+      <%= f.select :seltrecho_eq, Job::SELTRECHO, {include_blank: "回声"}, class: "js-example-basic-multiple" %>
       <%= f.select :apple_cont, Job::APPLE, {include_blank: "形态"}, class: "js-example-basic-multiple" %>
       <%= f.select :seltredge_cont, Job::SELTREDGE, {include_blank: "边缘"}, class: "js-example-basic-multiple" %>
       <%= f.select :seltrcalc_cont, Job::SELTRCALC, {include_blank: "钙化"}, class: "js-example-basic-multiple" %>
+
+      <button id="testa14344" type="button" class="btn border：0">示例图片</button>
+
+      <div id="testc14344" ;">
+      <ul class="list-unstyled">
+      <li>举例<img src="http://p9sqbcnde.bkt.clouddn.com/jiejie0432.jpeg" width="100" height="100"></li>
+      </ul>
+      <script>
+        $("#testc14344").hide();
+
+        $("#testa14344").click(function(){
+          $("#testc14344").toggle();
+        })
+
+        $("#testb14344").click(function(){
+          $("#testc14344").hide();
+        })
+      </script>
+      </div>
+
+      <button id="testa143441" type="button" class="btn border：0">解剖操作</button>
+
+      <div id="testc143441" ;">
+      <ul class="list-unstyled">
+      <li> <img src="http://p9sqbcnde.bkt.clouddn.com/jiejie0432.jpeg" width="100" height="100"></li>
+      </ul>
+      <script>
+        $("#testc143441").hide();
+
+        $("#testa143441").click(function(){
+          $("#testc143441").toggle();
+        })
+
+        $("#testb143441").click(function(){
+          $("#testc143441").hide();
+        })
+      </script>
+      </div>
+
       <script type="text/javascript">
           //页面加载完成后初始化select2控件
           $(function () {

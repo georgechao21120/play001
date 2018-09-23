@@ -49,7 +49,7 @@ end
     scope :published, -> { where(is_hidden: false) }
     scope :recent, -> { order('created_at DESC') }
 
-    SELTRPOS = ["甲状腺", ""]
+        SELTRPOS = ["甲状腺", "髋关节"]
         validates_inclusion_of :seltrpos, :in => SELTRPOS
         SELTRCOMP = ["囊性或几乎完全囊性", "海绵样", "囊实混合性", "实性或几乎完全实性", ""]
         validates_inclusion_of :seltrcomp, :in => SELTRCOMP
